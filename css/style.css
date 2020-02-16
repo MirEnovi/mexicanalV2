@@ -47,24 +47,86 @@ table {
 	border-spacing: 0;
 }
 
+/*-- Google Font --*/
+@font-face {font-family: "SkolaSans";
+    src: url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.eot");
+    src: url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.svg#SkolaSans") format("svg");
+}
+
+/*-- Common Style --*/
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body { background-color: #ffffff; line-height: 24px; font-size: 14px; font-style: normal; font-weight: normal; visibility: visible; font-family: "SkolaSans", sans-serif; color: #666666; }
+
+h1, h2, h3, h4, h5, h6 { color: #444444; font-family: "SkolaSans", sans-serif; font-weight: 400; margin-top: 0; }
+
+h1, .h1 { font-size: 36px; line-height: 42px; }
+
+h2, .h2 { font-size: 30px; line-height: 36px; }
+
+h3, .h3 { font-size: 24px; line-height: 30px; }
+
+h4, .h4 { font-size: 18px; line-height: 24px; }
+
+h5, .h5 { font-size: 14px; line-height: 18px; }
+
+h6, .h6 { font-size: 12px; line-height: 14px; }
+
+.italic { font-style: italic; }
+
+p:last-child { margin-bottom: 0; }
+
+a, button { color: inherit; display: inline-block; line-height: inherit; text-decoration: none; cursor: pointer; }
+
+a, i, button, img, input, span, *:before, *:after { -webkit-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
+
+*:focus { outline: none !important; }
+
+a:focus { color: inherit; outline: none; text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+button, input[type="submit"] { cursor: pointer; }
+
+ul { list-style: outside none none; margin: 0; padding: 0; }
+
+/*-Common CSS-*/
+.fix { overflow: hidden; }
+
+.clear { clear: both; }
+
+.section { float: left; width: 100%; }
+
+/*-Background color-*/
+.bg-white { background-color: #ffffff; }
+
+.bg-black { background-color: #000000; }
+
+.bg-light-gray { background-color: #f6f6f6; }
+
+.bg-dark { background-color: #ffffff !important; }
+
+.bg-dark-gray { background-color: #2d2d2d; }
+
+.bg-blue { background-color: #00c8fa; }
+
+.bg-yellow { background-color: #ffc61c; }
 
 /* 1.Layout */
 :root {
 	--fontuno: "SkolaSans", sans-serif;
-	--widgetSize: 950px;
 }
-
 body {
-  background-color: #fff;
-  color: white;
-  text-align: center;
-  font-style: normal;
-  font-size: 20px;
-  font-family: Arial, Baskerville, monospace;
+	--widgetSize: 930px;
 }
 
 /* header */
-
 .logo {
 	display: flex;
 	justify-content: center;
@@ -72,35 +134,101 @@ body {
 .logo img {
 	width: auto;
 	height: auto;
-	max-width:calc(var(--widgetSize)/6);
+	max-width:calc(var(--widgetSize)/5);
 	padding: 1rem 1rem 0 1rem;
 }
-
 .banner-header {
 	display: flex;
-	justify-content: left;
-	width: 100%; 
+	justify-content: center;
+	width: 100%;
 }
-
 .banner-header img {
 	margin: 0;
-	width: calc(var(--widgetSize)*.7);
+	width: calc(var(--widgetSize)*.85);
 	height: auto;
 	max-width: 100%;
 	padding: 1rem 1rem 0 1rem;
 }
+.nav {
+	font-size: calc(var(--widgetSize)/70);
+	justify-content: center;
+}
+.btn-search {
+	font-size: 30px;
+	background: transparent;
+	border: 0;
+	display: block;
+}
+.header-search-form input {
+	margin: .2rem;
+	border-radius: 25px;
+	padding: .3rem;
+	display: none;
+}
+.dias {
+	margin: .4rem 0 0 0;
+	display: block;
+	font-size: calc(var(--widgetSize)/65);
+	text-align: center;
+}
+button.navbar-toggler {
+	background-color: rgb(240, 232, 232);
+	display: none;
+}
+.menu-principal {
+	font-size: calc(var(--widgetSize)/65);
+	font-weight: 600;
+	line-height: 30px;
+	position: relative;
+	background: #CCCCCC;
+	color: black;
+	width: calc(100vw/9.52);
+	border-left: 3px solid transparent;
+	border-image: url('../assets/images/header/Barra_menu.png') 10 stretch;
+	text-align: center;
+}
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
-	.logo img {
-		max-width:calc(var(--widgetSize)/4);
+	body {
+		--widgetSize: 1120px;
+		padding: 0 calc(var(--widgetSize)*.25);
 	}
 	.banner-header {
 		justify-content: center;
 	}
+	.menu-principal {
+		width: calc(100vw/13);
+	}
+}
+
+/* small screens ----------- */
+@media only screen and (max-width : 670px) {
+	body {
+		--widgetSize: 650px;
+		;
+	}
+	.banner-header {
+		justify-content: center;
+		width: 100%;
+	}
 	.banner-header img {
-		width: calc(var(--widgetSize)*1.4);
-		
+		width: 100%;
+	}
+	.redes {
+		display: flex;
+		justify-content: center;
+	}
+	/* .menu-principal-sm {
+
+	} */
+	.menu-principal {
+		background: #CCCCCC;
+		width: calc(100vw/1.2);
+		text-align: center;
+	}
+	button.navbar-toggler {
+		display: block;
 	}
 }
 
