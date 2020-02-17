@@ -28,6 +28,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+.row {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
 body {
 	line-height: 1;
 }
@@ -64,7 +69,7 @@ html, body { height: 100%; }
 
 body { background-color: #ffffff; line-height: 24px; font-size: 14px; font-style: normal; font-weight: normal; visibility: visible; font-family: "SkolaSans", sans-serif; color: #666666; }
 
-h1, h2, h3, h4, h5, h6 { color: #444444; font-family: "SkolaSans", sans-serif; font-weight: 400; margin-top: 0; }
+h1, h2, h3, h4, h5, h6 { font-family: "SkolaSans", sans-serif; font-weight: 400; margin-top: 0; }
 
 h1, .h1 { font-size: 36px; line-height: 42px; }
 
@@ -134,7 +139,7 @@ body {
 .logo img {
 	width: auto;
 	height: auto;
-	max-width:calc(var(--widgetSize)/5);
+	max-width:calc(var(--widgetSize)/6);
 	padding: 1rem 1rem 0 1rem;
 }
 .banner-header {
@@ -149,7 +154,8 @@ body {
 	max-width: 100%;
 	padding: 1rem 1rem 0 1rem;
 }
-.nav {
+nav {
+	padding: 0 !important;
 	font-size: calc(var(--widgetSize)/70);
 	justify-content: center;
 }
@@ -175,37 +181,91 @@ button.navbar-toggler {
 	background-color: rgb(240, 232, 232);
 	display: none;
 }
-.menu-principal {
-	font-size: calc(var(--widgetSize)/65);
+.menu-principal, .link-footer {
+	font-size: calc(var(--widgetSize)/70);
 	font-weight: 600;
 	line-height: 30px;
 	position: relative;
-	background: #CCCCCC;
-	color: black;
-	width: calc(100vw/9.52);
-	border-left: 3px solid transparent;
-	border-image: url('../assets/images/header/Barra_menu.png') 10 stretch;
+	width: calc(73.3vw/7);
 	text-align: center;
 }
+.menu-principal {
+		background: #CCCCCC;
+		color: black;
+		border-left: 3px solid transparent;
+		border-image: url('../assets/images/header/Barra_menu.png') 10 stretch;
+}
+.nav-link {
+	padding: .5rem !important;
+}
+.redes {
+	display: flex;
+	justify-content: center;
+}
+.redes img {
+	height: 1.8rem;
+	width: auto;
+	margin: .1rem;
+}
 
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-	body {
-		--widgetSize: 1120px;
-		padding: 0 calc(var(--widgetSize)*.25);
-	}
-	.banner-header {
-		justify-content: center;
-	}
-	.menu-principal {
-		width: calc(100vw/13);
-	}
+/* secciones */
+.container-secciones {
+	height: 60vh;
+}
+
+/* footer */
+footer {
+	width: 100vw !important;
+	background-color: #FF921F;
+	color: #ffffff;
+	padding: 0 0 3rem 0 !important;
+}
+.logo-footer {
+	padding: 2rem !important;
+	background-image: url('../assets/images/footer/Sombra_Foother.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 40px !important;
+}
+.nav-footer {
+	display: block;
+	margin: .5rem 0;
+}
+.menu-footer {
+	background-image: url('../assets/images/footer/Sombra_Foother.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 10px !important;
+}
+.link-footer {
+	background: transparent;
+	color: #ffffff;
+}
+.footer-contacto {
+	padding: 1rem;
+}
+.footer-contacto h4 {
+	padding: 1rem 0;
+}
+.logos-footer {
+	padding: 8rem 0 0 6rem;
+}
+.logos-footer div,
+.logos-footer p {
+	text-align-last: end;
+	padding: 0 1rem 0 0;
+}
+.logos-footer img {
+	vertical-align: middle;
+	height: auto;
+	width: calc(var(--widgetSize)/28);
 }
 
 /* small screens ----------- */
 @media only screen and (max-width : 670px) {
+	/* header */
 	body {
-		--widgetSize: 650px;
+		--widgetSize: 750px;
 		;
 	}
 	.banner-header {
@@ -216,19 +276,55 @@ button.navbar-toggler {
 		width: 100%;
 	}
 	.redes {
-		display: flex;
+		display: none;
 		justify-content: center;
 	}
-	/* .menu-principal-sm {
-
-	} */
 	.menu-principal {
 		background: #CCCCCC;
-		width: calc(100vw/1.2);
+		width: calc(100vw/1.1);
 		text-align: center;
 	}
 	button.navbar-toggler {
 		display: block;
+	}
+	/* footer */
+	.nav-footer {
+		display: none;
+	}
+	.logos-footer {
+		padding: 1rem;
+		text-align: center;
+	}
+	.logos-footer div, .logos-footer p {
+    text-align-last: center;
+	}
+}
+
+/* Medium screens ----------- */
+@media only screen and (max-width : 1024px) {
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	/* header */
+	body {
+		--widgetSize: 1120px;
+	}
+	.container-principal {
+		padding: 0 calc(var(--widgetSize)*.25);
+	}
+	.banner-header {
+		justify-content: center;
+	}
+	.menu-principal {
+		width: calc(100vw/13);
+	}
+	/* footer */
+
+	.logos-footer div, .logos-footer p {
+    text-align-last: center;
+	}
+	.link-footer {
+		width: calc(73.3vw/8);
 	}
 }
 
