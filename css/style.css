@@ -134,16 +134,22 @@ ul { list-style: outside none none; margin: 0; padding: 0; }
 body {
 	--widgetSize: 930px;
 }
+
+.menu-principal, .videos p, .link-footer {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
 /* Tamaño del scroll */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 15px;
 	height: 8px;
 }
 
 /* Estilos barra (thumb) de scroll */
 ::-webkit-scrollbar-thumb {
 	background: var(--primerolcolor);
-	border-radius: 4px;
+	border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -158,7 +164,7 @@ body {
 /* Estilos track de scroll */
 ::-webkit-scrollbar-track {
 	background: #e1e1e1;
-	border-radius: 4px;
+	border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track:hover,
@@ -214,7 +220,9 @@ nav {
 	text-align: center;
 }
 button.navbar-toggler {
-	background-color: rgb(240, 232, 232);
+	background-color: rgb(255, 146, 31);
+	width: 20vw;
+	height: 15vw;
 	display: none;
 }
 .menu-principal, .link-footer {
@@ -229,8 +237,8 @@ button.navbar-toggler {
 	color: black;
 	border-left: 3px solid transparent;
 	border-image: url('../assets/images/header/Barra_menu.png') 10 stretch;
-	/* width: calc(72.97vw/7); */
 	width: calc(74.8vw/7);
+
 }
 .nav-link {
 	padding: .5rem !important;
@@ -255,7 +263,7 @@ button.navbar-toggler {
 	background: #E6E6E6;
 	width: 100%;
 	min-height: 584px;
-	height: 584px;
+	height: 680px;
 	overflow-y: auto;
 }
 .alaire-titulo {
@@ -278,10 +286,74 @@ button.navbar-toggler {
 .alaire-programa {
 	padding: 1rem !important;
 }
+.alaire-programa p {
+	font-size: calc(var(--widgetSize)/60);
+}
 .slider-home {
-	background-color: #a41cff;
-	height: 65%;
-	min-height: 20rem;
+	height: auto;
+	min-height: 18rem;
+	margin: 3.5rem 0 0 0;
+}
+.titulo-slider {
+	position: absolute;
+	margin: -5.4rem 0 0 -16rem;
+	background-image: url('../assets/images/seccion-uno/Fondo_titulo.png');
+	background-position: center;
+	background-size: calc(100vw/1.7);
+	width: 100%;
+	height: auto;
+	min-height: 8rem;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	color: #ffffff;
+}
+.titulo-slider p {
+	position: absolute;
+	margin: 3rem 0 0 0;
+}
+.carousel {
+	width: inherit;
+}
+.carousel-item img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.banne-dos {
+	padding: 1.5rem;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.banne-dos img {
+	margin: auto;
+	height: initial;
+	width: inherit;
+}
+.videos {
+	width: 100%;
+	height: 100%;
+	background-color: #DE912F;
+	color: #ffffff;
+	text-align: center;
+}
+.video {
+	display: flex;
+	justify-content: center;
+	height: 70%;
+}
+.video iframe {
+	width: 80%;
+	height: auto;
+	margin: .5rem auto 0;
+	
+}
+.videos p {
+	padding: .3rem 1rem 0;
+	font-size: calc(var(--widgetSize)/75);
 }
 
 /* footer */
@@ -340,7 +412,11 @@ footer {
 	/* header */
 	body {
 		--widgetSize: 750px;
-		;
+	}
+	/* Tamaño del scroll */
+	::-webkit-scrollbar {
+		width: 5px;
+		height: 8px;
 	}
 	.banner-header {
 		justify-content: center;
@@ -364,11 +440,24 @@ footer {
 
 	/* primera seccion */
 	.alaire {
-		min-height: 300px;
-		height: 300px;
+		min-height: 200px;
+		height: 200px;
+	}
+	.alaire-titulo {
+		margin: -3rem 0 0 0;
 	}
 	.alaire-titulo h3 {
 		font-size: 1rem;
+	}
+	.carousel-item img {
+		max-width: 100%;
+		width: auto;
+		height: 300px;
+		object-fit: cover;
+	}
+	.titulo-slider {
+		margin: -5.6rem 0 0 0rem;
+		background-size: calc(100vw/.4);
 	}
 
 	/* footer */
@@ -387,11 +476,29 @@ footer {
 		text-align: center;
 	}
 }
-
 /* Medium screens ----------- */
-@media only screen and (max-width : 1024px) {
+@media only screen and (min-width : 671px) and (max-width : 1024px) {
+	.alaire {
+		min-height: 250px;
+		height: 570px;
+	}
+	.alaire-titulo {
+		margin: -9rem 0 0 0;
+		padding: 7rem 0 0 0;
+		min-height: 14rem;
+	}
+	.alaire-programa p {
+		font-size: calc(var(--widgetSize)/60);
+	}
 }
+
 /* Large screens ----------- */
+@media only screen and (min-width : 1025px) and (max-width : 1440px) {
+	.titulo-slider {
+		margin: -5.7rem 0 0 -13rem;
+	}
+}
+/* XLarge screens ----------- */
 @media only screen and (min-width : 1824px) {
 	/* header */
 	body {
@@ -406,6 +513,14 @@ footer {
 	/* width links menu */
 	.menu-principal, .link-footer {
 		width: calc(58.5vw/7);
+	}
+	/* section */
+	.titulo-slider {
+		margin: -5.2rem 0 0 -19rem;
+		background-size: calc(75vw/1.7);
+	}
+	.alaire {
+	height: 880px;
 	}
 	/* footer */
 	footer {
