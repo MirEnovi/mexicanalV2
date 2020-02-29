@@ -487,12 +487,12 @@ footer {
 	}
 	.alaire-programas {
 		min-height: 100px;
-    height: 150px;
+    height: 115px;
 	}
 	.carousel-item img {
 		max-width: 100%;
 		width: auto;
-		height: 300px;
+		height: auto;
 		object-fit: cover;
 	}
 	.titulo-slider.uno,
@@ -513,7 +513,8 @@ footer {
     position: inherit;
 	}
 	.slider-home {
-		margin: -1.7rem 0 0 0;
+		margin: -1.65rem 0 0 0;
+		min-height: 7rem;
 	}
 
 	/* footer */
@@ -568,6 +569,7 @@ footer {
 @media only screen and (min-width : 1025px) and (max-width : 1440px) {
 	.titulo-slider.uno {
 		background-size: calc(100vw/1.35);
+		margin: 0 0 0 -3rem;
 	}
 }
 
@@ -597,6 +599,9 @@ footer {
 	.alaire {
 	height: 880px;
 	}
+	.alaire-programas {
+		height: 770px;
+	}
 	/* footer */
 	footer {
 		padding: 0 calc(var(--widgetSize)*.25) !important;
@@ -604,6 +609,5 @@ footer {
 	.logos-footer div, .logos-footer p {
     text-align-last: center;
 	}
-
 }
 
