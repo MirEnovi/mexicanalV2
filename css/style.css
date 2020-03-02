@@ -337,7 +337,7 @@ button.navbar-toggler {
 	height: auto;
 	object-fit: cover;
 }
-.banne-dos {
+.banner-dos {
 	padding: 1.5rem;
 	display: flex;
 	justify-content: center;
@@ -345,7 +345,7 @@ button.navbar-toggler {
 	height: 100%;
 	background-color: #e2e2e23b;
 }
-.banne-dos img {
+.banner-dos img {
 	margin: auto;
 	height: initial;
 	width: inherit;
@@ -433,7 +433,7 @@ button.navbar-toggler {
 	text-align: center;
 	display: flex;
 }
-.titulo-mxcan h4 {
+.titulo-mxcan h4, .titulo-fotos h4 {
 	margin: .5rem auto;
 }
 .mxcan-video {
@@ -442,8 +442,9 @@ button.navbar-toggler {
 }
 .mxcan-video iframe {
 	padding: 0 .5rem;
-	width: 95%;
+	width: calc(var(--widgetSize)/3.5);
 	min-height: 10rem;
+	margin: 0 auto;
 }
 .mxcan-video p {
 	text-align: left;
@@ -484,6 +485,37 @@ button.navbar-toggler {
 .video-lista>div>p {
 	font-size: .5rem;
 	height: .8rem;
+}
+.titulo-fotos {
+	background-image: url('../assets/images/seccion-mxcan/Fondo-titulo-5.png');
+	background-position-y: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 6.5rem;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+}
+.foto {
+	height: calc(var(--widgetSize)/7);
+	width: auto;
+}
+.foto img {
+	height: inherit;
+	width: 100%;
+	object-fit: cover;
+	padding: .5rem 0;
+}
+.banner-tres {
+	width: 100%;
+	height: 26rem;
+	display: flex;
+}
+.banner-tres img {
+	width: 100%;
+	height: auto;
+	margin: auto;
 }
 
 /* footer */
@@ -571,7 +603,6 @@ footer {
 	/* primera seccion */
 	.alaire {
 		min-height: 200px;
-		/* height: 200px; */
 		height: auto;
 	}
 	.alaire-titulo {
@@ -616,6 +647,13 @@ footer {
 	/* seccion canales */
 	.titulo-slider-canales {
 		min-height: 3.5rem;
+	}
+	/* seccion mxcanal y fotos */
+	.titulo-fotos, .titulo-mxcan {
+		min-height: 3.5rem;
+	}
+	.banner-tres {
+		height: 70rem;
 	}
 	/* footer */
 	.nav-footer {
@@ -663,6 +701,9 @@ footer {
 	.video iframe {
 		width: 70%;
 	}
+	.foto {
+		height: calc(var(--widgetSize)/9);
+	}
 }
 
 /* Large screens ----------- */
@@ -670,6 +711,14 @@ footer {
 	.titulo-slider.uno {
 		background-size: calc(100vw/1.35);
 		margin: 0 0 0 -3rem;
+	}
+	.mxcan {
+		height: 500px;
+		padding: 1rem;
+	}
+	.banner-tres {
+		height: 31rem;
+		padding: 1rem;
 	}
 }
 
@@ -689,7 +738,7 @@ footer {
 	.menu-principal, .link-footer {
 		width: calc(58.5vw/7);
 	}
-	/* section */
+	/* sectiones*/
 	.titulo-slider.dos {
     min-height: 7rem;
 	}
@@ -699,6 +748,23 @@ footer {
 	.alaire-programas {
 		height: 650px;
 	}
+	.titulo-mxcan h4, .titulo-fotos h4 {
+		margin: 1.5rem auto;
+		font-size: 1.6rem;
+	}
+	.mxcan-video iframe {
+		min-height: 13rem;
+	}
+	.lista-videos {
+		height: 34rem;
+	}
+	.video-lista>div>iframe {
+		max-height: 5rem;
+	}
+	.foto {
+		height: calc(var(--widgetSize)/5.5);
+	}
+
 	/* footer */
 	footer {
 		padding: 0 calc(var(--widgetSize)*.25) !important;
