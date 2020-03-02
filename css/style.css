@@ -108,6 +108,8 @@ ul { list-style: outside none none; margin: 0; padding: 0; }
 
 .section { float: left; width: 100%; }
 
+.font-bold { font-weight: 600; }
+
 /*-Background color-*/
 .bg-white { background-color: #ffffff; }
 
@@ -377,14 +379,14 @@ button.navbar-toggler {
 	background-position-x: center;
 	background-position-y: center;
 	background-repeat: no-repeat;
-	background-size: 105%;
+	background-size: 99.5%;
 	min-height: 6.5rem;
 	width: 100%;
 	color: #ffffff;
 	text-align: center;
 	display: flex;
 }
-.titulo-slider-canales h3 {
+.titulo-slider-canales h4 {
 	margin: auto;
 }
 .slider-canales{
@@ -403,6 +405,85 @@ button.navbar-toggler {
 	height: 95%;
 	max-width: initial;
 	margin: auto;
+}
+/* .slick-next:before {
+	content: url('../assets/images/slider-canales/Flecha_derecha.png');
+} */
+
+/* seccion mxcan y fotos */
+.mxcan, .fotos {
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+}
+.mxcan {
+	background-color: #E6E6E6;
+}
+.fotos {
+	background-color: #CACACA;
+}
+.titulo-mxcan {
+	background-image: url("../assets/images/seccion-mxcan/Fondo-tiutlo-4.png");
+	background-position-y: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 5.5rem;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+}
+.titulo-mxcan h4 {
+	margin: .5rem auto;
+}
+.mxcan-video {
+	width: 100%;
+	height: auto;
+}
+.mxcan-video iframe {
+	padding: 0 .5rem;
+	width: 95%;
+	min-height: 10rem;
+}
+.mxcan-video p {
+	text-align: left;
+	width: 100%;
+	color: rgb(24, 24, 24);
+	padding: .5rem 0 0 1.5rem;
+}
+.mxcan-video-notes {
+	background-attachment: local;
+	background-image: repeating-linear-gradient(#E6E6E6, #E6E6E6 28px, #000 32px, #000 32px, #E6E6E6 32px);
+	margin: 0 1rem;
+	border: 0;
+	width: 100%;
+	min-height: 7rem;
+}
+.mxcan-video a {
+	width: 95%;
+	text-align: right;
+}
+.lista-videos {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	width: 100%;
+	padding: 0 1rem;
+}
+.lista-videos-container {
+	margin: auto;
+}
+.video-lista {
+	background-color: #ffffff;
+	margin: .8rem .2rem;
+}
+.video-lista>div>iframe{
+	width: 95%;
+	max-height: 4rem;
+}
+.video-lista>div>p {
+	font-size: .5rem;
+	height: .8rem;
 }
 
 /* footer */
