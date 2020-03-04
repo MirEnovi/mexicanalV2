@@ -265,7 +265,7 @@ button.navbar-toggler {
 	background: #E6E6E6;
 
 }
-.alaire-titulo {
+.alaire-titulo, {
 	position: relative;
 	background-image: url('../assets/images/seccion-uno/Fondo_titulo_1.png');
 	background-position: center;
@@ -406,6 +406,11 @@ button.navbar-toggler {
 	max-width: initial;
 	margin: auto;
 }
+.slick-slide img {
+	object-fit: cover;
+	max-width: 90%;
+	height: auto;
+}
 /* .slick-next:before {
 	content: url('../assets/images/slider-canales/Flecha_derecha.png');
 } */
@@ -424,6 +429,11 @@ button.navbar-toggler {
 }
 .titulo-mxcan {
 	background-image: url("../assets/images/seccion-mxcan/Fondo-tiutlo-4.png");
+}
+.titulo-descarga {
+	background-image: url("../assets/images/seccion-mxcan/Fondo-titulo-6.png");
+}
+.titulo-mxcan, .titulo-descarga {
 	background-position-y: top;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -486,6 +496,9 @@ button.navbar-toggler {
 	font-size: .5rem;
 	height: .8rem;
 }
+.titulo-descarga h4 {
+	margin: auto;
+}
 .titulo-fotos {
 	background-image: url('../assets/images/seccion-mxcan/Fondo-titulo-5.png');
 	background-position-y: top;
@@ -509,13 +522,14 @@ button.navbar-toggler {
 }
 .banner-tres {
 	width: 100%;
-	height: 26rem;
+	min-height: 26rem;
 	display: flex;
 }
 .banner-tres img {
 	width: 100%;
 	height: auto;
 	margin: auto;
+	object-fit: contain;
 }
 
 /* footer */
