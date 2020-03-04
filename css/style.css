@@ -265,7 +265,7 @@ button.navbar-toggler {
 	background: #E6E6E6;
 
 }
-.alaire-titulo, {
+.alaire-titulo {
 	position: relative;
 	background-image: url('../assets/images/seccion-uno/Fondo_titulo_1.png');
 	background-position: center;
@@ -437,11 +437,14 @@ button.navbar-toggler {
 	background-position-y: top;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	min-height: 5.5rem;
+	min-height: 5rem;
 	width: 100%;
 	color: #ffffff;
 	text-align: center;
 	display: flex;
+}
+.titulo-descarga {
+	min-height: 2.7rem;
 }
 .titulo-mxcan h4, .titulo-fotos h4 {
 	margin: .5rem auto;
@@ -531,6 +534,59 @@ button.navbar-toggler {
 	margin: auto;
 	object-fit: contain;
 }
+
+/* seccion cards */
+.card-container {
+	display: flex;
+	flex-direction: inherit;
+	overflow: hidden;
+}
+.foto-card {
+	background-size: auto;
+	background-position: top;
+	background-repeat: no-repeat;
+	min-height: 15rem;
+	width: 100%;
+	color: #ffffff;
+	margin: 1rem 0;
+	position: relative;
+	/* transition: all 3.5s ease-in-out;
+	overflow: hidden; */
+
+}
+/* .foto-card:hover {
+	transform: translate(100%);
+} */
+.texto-card.azul {
+	background-image: url('../assets/images/seccion-cards/Fondo-titulo-7.png');
+}
+.texto-card.turquesa {
+	background-image: url('../assets/images/seccion-cards/Fondo-titulo-8.png');
+}
+.texto-card.amarillo {
+	background-image: url('../assets/images/seccion-cards/Fondo-titulo-9.png');
+}
+.texto-card {
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	min-height: inherit;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+.texto-card h4 {
+	margin: 0 auto 1rem;
+}
+.info-card {
+	background-color: #F1F2F2;
+	width: initial;
+	height: auto;
+	padding: 1rem;
+	margin: auto;
+	display: none;
+}
+
 
 /* footer */
 footer {
@@ -669,6 +725,11 @@ footer {
 	.banner-tres {
 		height: 70rem;
 	}
+
+	/* seccion cards */
+	.foto-card {
+		margin: 1rem 0 0 0;
+	}
 	/* footer */
 	.nav-footer {
 		display: none;
@@ -777,6 +838,13 @@ footer {
 	}
 	.foto {
 		height: calc(var(--widgetSize)/5.5);
+	}
+	.titulo-descarga {
+		min-height: 5rem;
+	}
+	.foto-card {
+		min-height: 19rem;
+		width: 97%;
 	}
 
 	/* footer */
