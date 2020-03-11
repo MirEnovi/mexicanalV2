@@ -1,0 +1,67 @@
+.titulo-pd {
+  background-image: url('../assets/images/seccion-programas-destacados/Fondo-titulo-pd.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  margin: 0 0 -1rem 0;
+  
+  width: 100%;
+  height: auto;
+  min-height: 6.8rem;
+
+  display: flex;
+  justify-content: center
+}
+.titulo-pd h3,
+.titulo-programa-selec div {
+  margin: auto;
+}
+.slider-pd img {
+  height: 17rem;
+  object-fit: contain;
+  max-width: 100%;
+}
+.slick-slide {
+  width: auto !important;
+}
+.slick-list {
+  width: 70rem;
+}
+
+.titulo-programa-selec {
+  background-image: url('../assets/images/seccion-programas-destacados/Fondo-titulo-11.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 10rem;
+  height: fit-content;
+  width: 25rem;
+  margin: -2rem 30% 0;
+  color: #ffffff;
+  display: flex;
+}
+.imagen-programa-seleccionado {
+  background-image: url('../assets/images/seccion-programas-destacados');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 10rem;
+  height: fit-content;
+  width: 20rem;
+  margin: -2rem 30% 0;
+  color: #ffffff;
+  display: flex;
+}
+
+.publicidad-pd {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.publicidad-pd img {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+

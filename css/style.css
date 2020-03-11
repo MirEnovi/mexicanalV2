@@ -327,6 +327,7 @@ button.navbar-toggler {
 .titulo-slider.uno h4,
 .titulo-slider.dos h4 {
 	margin: 1rem auto 0;
+	font-size: 16px;
 }
 .carousel {
 	width: inherit;
@@ -777,7 +778,7 @@ footer {
 		width: 70%;
 	}
 	.foto {
-		height: calc(var(--widgetSize)/9);
+		height: calc(var(--widgetSize)/8);
 	}
 }
 
@@ -785,11 +786,14 @@ footer {
 @media only screen and (min-width : 1025px) and (max-width : 1440px) {
 	.titulo-slider.uno {
 		background-size: calc(100vw/1.35);
-		margin: 0 0 0 -3rem;
+		margin: -0.5px 0 0 -3rem;
 	}
 	.mxcan {
 		height: 500px;
 		padding: 1rem;
+	}
+	.mxcan {
+		min-height: 550px;
 	}
 	.banner-tres {
 		height: 31rem;
@@ -798,34 +802,38 @@ footer {
 }
 
 /* XLarge screens ----------- */
-@media only screen and (min-width : 1824px) {
+@media only screen and (min-width : 1650px) {
 	/* header */
 	body {
 		--widgetSize: 1120px;
 	}
 	.container-principal {
-		padding: 0 calc(var(--widgetSize)*.25);
+		padding: 0 calc(var(--widgetSize)*.20);
 	}
 	.banner-header {
 		justify-content: center;
 	}
 	/* width links menu */
 	.menu-principal, .link-footer {
-		width: calc(58.5vw/7);
+		width: calc(55vw/7);
 	}
 	/* sectiones*/
 	.titulo-slider.dos {
     min-height: 7rem;
 	}
 	.titulo-slider.uno {
-		background-size: calc(75vw/1.7);
+		background-size: calc(75vw/1.6);
+		margin: -.06rem 0 0 -3rem;
 	}
 	.alaire-programas {
-		height: 650px;
+		height: 570px;
 	}
 	.titulo-mxcan h4, .titulo-fotos h4 {
 		margin: 1.5rem auto;
-		font-size: 1.6rem;
+		font-size: 1rem;
+	}
+	.videos {
+		min-height: 18rem;
 	}
 	.mxcan-video iframe {
 		min-height: 13rem;
@@ -837,10 +845,10 @@ footer {
 		max-height: 5rem;
 	}
 	.foto {
-		height: calc(var(--widgetSize)/5.5);
+		height: calc(var(--widgetSize)/7);
 	}
 	.titulo-descarga {
-		min-height: 5rem;
+		min-height: 3.5rem;
 	}
 	.foto-card {
 		min-height: 19rem;
@@ -853,6 +861,28 @@ footer {
 	}
 	.logos-footer div, .logos-footer p {
     text-align-last: center;
+	}
+}
+
+@media only screen and (min-width: 2550px) {
+	body {
+		--widgetSize: 1120px;
+	}
+	.alaire-programas {
+		height: 650px;
+	}
+	.container-principal {
+		padding: 0 calc(var(--widgetSize)*.35);
+	}
+	.titulo-descarga {
+		min-height: 4.5rem;
+	}
+	.menu-principal,
+	.link-footer {
+		width: calc(52vw/7);
+	}
+	.mxcan-video-notes {
+		margin: 3rem 1rem 0;
 	}
 }
 

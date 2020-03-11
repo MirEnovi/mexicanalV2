@@ -1,0 +1,618 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mexicanal</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img\favicon.png">
+  <!-- CSS
+    ============================================ -->
+  <!-- Bootstrap CSS -->
+  <!--<link rel="stylesheet" href="css\bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Icon Font CSS -->
+  <link rel="stylesheet" href="css\font-awesome.min.css">
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="css\plugins.css">
+  <!-- rypp -->
+  <link rel="stylesheet" href="css\rypp.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Modernizer JS -->
+  <script src="js\vendor\modernizr-2.8.3.min.js"></script>
+  <style type="text/css">
+    .nopadding {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .menu2 {
+      float: left;
+    }
+
+
+    .menu2 ul {
+      float: left;
+    }
+
+    .menu2 ul>li {
+      display: block;
+      float: left;
+      margin-right: 30px;
+      /*-- Active & Hover Menu Color --*/
+      /*-- DropDown Arrow --*/
+      /*-- Sub Menu --*/
+    }
+
+    .menu2 ul>li:last-child {
+      margin-right: 0;
+    }
+
+    .menu2 ul>li>a {
+      font-size: 13px;
+      font-family: "SkolaSans", sans-serif;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 30px;
+      padding: 5px 0;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .menu2 ul>li.active>a,
+    .menu2 ul>li:hover>a {
+      color: #00c8fa;
+    }
+
+    .menu2 ul>li.has-dropdown>a::after {
+      font-family: 'Fontawesome';
+      content: '\f107';
+      margin-left: 8px;
+      display: block;
+      float: right;
+    }
+
+    .menu2 ul>li:hover .sub-menu,
+    .main-menu nav>ul>li:hover .mega-menu {
+      opacity: 1;
+      z-index: 999;
+      visibility: visible;
+    }
+
+    .panel-body p {
+      font-size: 12px;
+    }
+
+    .panel-body .aireahora {
+      margin: -10px 0px 0px 5px;
+      font-size: 1.1rem;
+    }
+
+    .pagination li {
+      display: inline-block;
+      padding: 5px;
+    }
+
+    .nav {
+      display: flex;
+      padding-top: 3%;
+      align-items: center;
+    }
+
+    .nav [class^="btn"] {
+      padding: 8px;
+      background: #333;
+      color: white;
+      margin: 0 3px;
+    }
+
+    .active {
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 nopadding">
+        <div class="text-center">
+          <a href="index.html"><img src="img\logomexicanal.png" width="150px" style="margin-top: 15px;"></a>
+        </div>
+      </div>
+      <div class="col-sm-9 nopadding">
+        <div class="float-left" style="position: relative; width: 100%;">
+          <div class="float-left">
+            <img src="img/MXCAN-ban.gif" alt="">
+          </div>
+        </div>
+        <div class="float-left col-sm-12 nopadding"
+          style="position: relative; width: 100%;margin-bottom: 0px !important;">
+          <div class="float-left" style="width: 75%">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+              <div>
+                <button class="header-search-toggle btn-search">
+                  <i class="fa fa-search" style="color: black;"></i>
+                </button>
+                <!-- Header Search Form -->
+                <div class="header-search-form">
+                  <form action="#" style="margin-top: -30px; width: 85%;">
+                    <input type="text" placeholder="Search Here" style="width: 100%;position: relative;">
+                  </form>
+                </div>
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Contáctanos</a>
+                  </li>
+                  <li class="nav-item text-uppercase">
+                    <a class="nav-link" href="#">Media kit</a>
+                  </li>
+                  <li class="nav-item text-uppercase">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="contenedor-dias">
+              <p class="p-dia">Martes 8 de Enero, 2019</p>
+              <p class="p-horas">9:05 AM Centro</p>
+            </div>
+          </div>
+          <div class="float-right" style="width: 25%">
+            <div class="row" style="width: 100%;">
+              <!-- Search Toggle -->
+              <div style="width: 25%">
+                <!-- <button class="header-search-toggle" style="font-size: 30px;"><i class="fa fa-search" style="color: black;"></i></button>
+                                
+                                <div class="header-search-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search Here">
+                                    </form>
+                                </div> -->
+              </div>
+              <div style="width: 75%">
+                <img src="img/face.png" style="height: 30px; width:auto; margin: 5px;">
+                <img src="img/twi.png" style="height: 30px; width:auto; margin: 5px;">
+                <img src="img/you.png" style="height: 30px; width:auto; margin: 5px;">
+                <img src="img/insta.png" style="height: 30px; width:auto; margin: 5px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-left col-sm-12 nopadding" style="position: relative; width: 100%;">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark nopadding">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu2 collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto" style="width: 100%;">
+                <li class="nav-item" style="width: 14.29%; margin-right: 0px;">
+                  <a class="text-center" href="programa2.html"
+                    style="background: #CCCCCC; color: black;  width: 100%; ">PROGRAMAS</a>
+                </li>
+                <li class="nav-item" style="width: 14.29%; margin-right: 0px;">
+                  <a class="text-center border-menu" href="programacion.html"
+                    style="background: #CCCCCC; color: black; width: 100%; ">PROGRAMACIÓN</a>
+                </li>
+                <li class="nav-item" style="width: 14.29%; margin-right: 0px;">
+                  <a class="text-center border-menu" href="informacion.html"
+                    style="background: #CCCCCC; color: black; width: 100%; ">INFORMACIÓN</a>
+                </li>
+                <li class="nav-item" style="width: 14.29%; margin-right: 0px;">
+                  <a class="text-center border-menu c-azul" href="mapa.html">INMIGRACIÓN</a>
+                </li>
+                <li class="nav-item" style="width: 14.29%; margin-right: 0px;">
+                  <a class="text-center border-menu" href="fotos.html"
+                    style="background: #CCCCCC; color: black; width: 100%; ">FOTOS</a>
+                </li>
+                <li class="nav-item" style="width: 14.29%; margin-right: 0px;">
+                  <a class="text-center border-menu" href="cocina.html"
+                    style="background: #CCCCCC; color: black; width: 100%; ">COCINA</a>
+                </li>
+                <li class="nav-item" style="width: 14.29%; margin-right: 0px;">
+                  <a class="text-center border-menu" href="videos.html"
+                    style="background: #CCCCCC; color: black; width: 100%; ">VIDEO</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 nopadding">
+        <div class="panel panel-default">
+          <div class="panel-body scroll-panel" style="background: #E6E6E6; width: 100%; height: 584px !important;">
+            <div>
+              <div
+                style="position: inherit;background-image: url('img/barnermorado.png'); background-position: center; background-size: cover; height: 85px; background-repeat: no-repeat; font-size: 23px;">
+                <div class="text-center" style="color: white;"></br>
+                  <p class="aireahora">AL AIRE AHORA</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" style="margin-top: 15px;">
+              <p style="margin-bottom: 10px;">9:30 COMO EN CASA</p>
+            </div>
+            <div class="col-md-12">
+              <p>Directo de aguascalientes, comparte la mañana con toda la información y humor que este
+                programa tiene para ti</p>
+            </div>
+            <div class="col-md-12" style="margin-top: 5px;">
+              <p style="margin-bottom: 10px;margin-top: 10px;">9:30 COMO EN CASA</p>
+            </div>
+            <div class="col-md-12">
+              <p>Directo de aguascalientes, comparte la mañana con toda la información y humor que este
+                programa tiene para ti</p>
+            </div>
+            <div class="col-md-12" style="margin-top: 5px;">
+              <p style="margin-bottom: 10px;margin-top: 10px;">9:30 COMO EN CASA</p>
+            </div>
+            <div class="col-md-12">
+              <p>Directo de aguascalientes, comparte la mañana con toda la información y humor que este
+                programa tiene para ti</p>
+            </div>
+            <div class="col-md-12" style="margin-top: 5px;">
+              <p style="margin-bottom: 10px;margin-top: 10px;">9:30 COMO EN CASA</p>
+            </div>
+            <div class="col-md-12">
+              <p>Directo de aguascalientes, comparte la mañana con toda la información y humor que este
+                programa tiene para ti</p>
+            </div>
+            <div class="col-md-12" style="margin-top: 5px;">
+              <p style="margin-bottom: 10px;margin-top: 10px;">9:30 COMO EN CASA</p>
+            </div>
+            <div class="col-md-12">
+              <p>Directo de aguascalientes, comparte la mañana con toda la información y humor que este
+                programa</p>
+            </div>
+            <!--<img src="img/verde.png" style="width:105%; position: absolute; bottom: 0px; z-index: 500;">
+                                <div style="width:100%; position: absolute; bottom: 35px; z-index: 500; color: white;">
+                                    <center>
+                                        DONDE PUEDE VERNOS
+                                    </center>
+                                </div>-->
+          </div>
+        </div>
+        <div class="ml-15">
+          <img src="img/LMJP_boxbanner.gif" alt="">
+        </div>
+      </div>
+      <div class="col-sm-6 nopadding">
+        <div class="jsmaps-wrapper" id="usa-map" style="height: 300px;">
+        </div>
+        <div class="col-sm-12"
+          style="position: relative; background-image: url('img/Inmigracion_mapas/Fondo-seleccionar-su-estado.jpg'); background-position: center; background-size: cover; width: 100%; height: 3%; background-repeat: no-repeat; font-size: 12px;">
+          <div class="text-center" style="position: absolute; width: 30%; margin-left: 0; top: 30%">
+            <p style="color: white;">SELECCIONE SU ESTADO:</p>
+          </div>
+          <div class="text-center" style="position: absolute; top: 30%; margin-left: 30%; color: #f1f1f1; width: 70%;">
+            <h5 id="name_estado"></h5>
+          </div>
+        </div>
+        <div class="col-sm-12" style="width: 100%; height: auto; top: 2%">
+
+          <div id="easyPaginateList" style="height: 1700px">
+            <div class="list-group list-group-flush list" style="width: 100%;">
+
+            </div>
+            <div class="nav justify-content-center">
+              <ul class="pagination">
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-3 nopadding" style="background: #E6E6E6; height: fit-content;">
+        <div class="row nopadding">
+          <div class="col-sm-12"
+            style="background-image: url('img/barnermorado.png'); background-position: center; background-size: cover; width: 100%; height: 75px; background-repeat: no-repeat; font-size: 15px;">
+            <div class="text-center" style="color: white;font-size: 20px;font-weight: bold;margin-top: -6px;">
+              </br>ARTÍCULOS DE INMIGRACIÓN</div>
+          </div>
+          <div class="col-sm-12" style="">
+            <h5 class="text-center" style="color: #679DC4">Recomendaciones en caso de detención de Inmigración</h5>
+            <p style="font-size: 12px; line-height: 1.5em; padding-left: 6%; padding-right: 6%">La Secretaría de
+              Relaciones Exteriores dio a conocer el video Recomendaciones en caso de detención de Inmigración...</p>
+            <p style="text-align: right; padding-right: 6%">
+              <a href="articulos_inmigracion.html">[Leer más]</a>
+            </p>
+          </div>
+          <div class="col-sm-12" style="background-color: #FFFFFF">
+            <h5 class="text-center" style="color: #679DC4; padding-top: 6%">¿Qué hacer en caso de deportación?</h5>
+            <p style="font-size: 12px; line-height: 1.5em; padding-left: 6%; padding-right: 6%">Ante la situación que se
+              vive actualmente en los Estados Unidos, podrías tener algunas dudas sobre qué hacer en caso de deporta...
+            </p>
+            <p style="text-align: right; padding-right: 6%">
+              <a href="">[Leer más]</a>
+            </p>
+          </div>
+          <div class="col-sm-12" style="">
+            <h5 class="text-center" style="color: #679DC4; padding-top: 6%">¿Qué hacer en caso de redadas?</h5>
+            <p style="font-size: 12px; line-height: 1.5em; padding: 6%">La organización United We Dream, conformada por
+              jóvenes inmigrantes, aliados y organizaciones...</p>
+            <p style="text-align: right; padding-right: 6%">
+              <a href="">[Leer más]</a>
+            </p>
+          </div>
+          <div class="col-sm-12" style="background-color: #FFFFFF">
+            <h5 class="text-center" style="color: #679DC4; padding-top: 6%">Jornada Sabatina, 1 de junio</h5>
+            <p style="font-size: 12px; line-height: 1.5em; padding: 6%">El Consulado General de México en Houston,
+              Texas, anuncia que llevará acabo una Jornada Sabatina para atender...</p>
+            <p style="text-align: right; padding-right: 6%">
+              <a href="">[Leer más]</a>
+            </p>
+          </div>
+          <div class="col-sm-12">
+            <h5 class="text-center" style="color: #679DC4; padding-top: 6%">Incluye iniciativa de reforma migratoria más
+              visas en EEUU</h5>
+            <p style="font-size: 12px; line-height: 1.5em; padding: 6%">Washington (Notimex).- La primer iniciativa de
+              ley para una reforma migratoria en Estados Unidos seŕa anunciada...</p>
+            <p style="text-align: right; padding-right: 6%">
+              <a href="">[Leer más]</a>
+            </p>
+          </div>
+        </div>
+        <div class="row nopadding">
+          <div class="col-sm-12"
+            style="background-image: url('img/barnermorado.png'); background-position: center; background-size: cover; width: 100%; height: 75px; background-repeat: no-repeat; font-size: 15px;">
+            <div class="text-center" style="color: white;font-size: 20px;font-weight: bold;margin-top: -6px;"></br>NOTAS
+              AL MIGRANTE</div>
+          </div>
+          <div class="col-sm-6" style="margin-bottom: 15px;">
+            <img src="img/Inmigracion_mapas/Foto-notas-al-migrante.jpg" style="width: 100%; height: auto;">
+          </div>
+          <div class="col-sm-6" style="">
+            <p style="font-size: 12px; line-height: 1.5em">La primera iniciativa de ley para una reforma migratoria en
+              Estados Unidos será anunciada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="background-image: url('img/Fondo-Foother.jpg');">
+      <div class="col-sm-3"
+        style="padding: 20px !important; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 40px !important;">
+        <div class="text-center">
+          <a href="index.html"><img src="img\Logo_mexicanal.png" width="60%" style="margin-top: 15px;"></a>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div class="float-left col-sm-12" style="position: relative; width: 100%;">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: ##FF9336;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu2 collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto" style="width: 100%;">
+                <li class="nav-item"
+                  style="width: 14.2%; margin-right: 0px; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 10px !important;">
+                  <a class="text-center" href="programa2.html" style="color: white; width: 100%; ">PROGRAMAS</a>
+                </li>
+                <li class="nav-item"
+                  style="width: 14.2%; margin-right: 0px; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 10px !important;">
+                  <a class="text-center" href="programacion.html" style="color: white; width: 100%; ">PROGRAMACIÓN</a>
+                </li>
+                <li class="nav-item"
+                  style="width: 14.2%; margin-right: 0px; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 10px !important;">
+                  <a class="text-center" href="informacion.html" style="color: white; width: 100%; ">INFORMACIÓN</a>
+                </li>
+                <li class="nav-item"
+                  style="width: 14.2%; margin-right: 0px; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 10px !important;">
+                  <a class="text-center" href="mapa.html" style="color: white; width: 100%;">INMIGRACIÓN</a>
+                </li>
+                <li class="nav-item"
+                  style="width: 14.2%; margin-right: 0px; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 10px !important;">
+                  <a class="text-center" href="index.html" style="color: white; width: 100%; ">FOTOS</a>
+                </li>
+                <li class="nav-item"
+                  style="width: 14.2%; margin-right: 0px; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 10px !important;">
+                  <a class="text-center" href="#" style="color: white; width: 100%; ">COCINA</a>
+                </li>
+                <li class="nav-item"
+                  style="width: 14.2%; margin-right: 0px; background-image: url('img/Sombra_Foother.png'); background-position: right; background-repeat: no-repeat; background-size: 10px !important;">
+                  <a class="text-center" href="#" style="color: white; width: 100%; ">VIDEO</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="float-left col-sm-12" style="position: relative; width: 100%;">
+          <div class="float-left" style="padding: 20px !important; color: white;">
+            CONTACTANOS</br></br>
+            ¿Quienes somos?</br>
+            Acerca de MEXICANAL</br>
+            Politica de privacidad</br>
+            Términos de Uso</br>
+            Afiliadas
+          </div>
+          <div class="float-right" style="padding: 20px !important; color: white;">
+            <div class="text-right" style="position: absolute; bottom: 30px; right: 0px;">
+              <img src="img\Icon facebook_foother.png" alt="Post" height="auto" width="20px">
+              <img src="img\Icon twitter foorher.png" alt="Post" height="auto" width="20px">
+              <img src="img\Icon Youtobe foorher.png" alt="Post" height="auto" width="20px">
+              <img src="img\Icon instagram foorher.png" alt="Post" height="auto" width="20px">
+              </br>
+              Copyright 2019 Mexicanal Producciones, S.A. de C.V.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JS
+    ============================================ -->
+
+  <!-- jQuery JS -->
+  <!--<script src="js\vendor\jquery-1.12.0.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Popper JS -->
+  <script src="js\popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js\bootstrap.min.js"></script>
+  <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>-->
+  <!-- Plugins JS -->
+  <script src="js\plugins.js"></script>
+  <!-- rypp JS -->
+  <script src="js\rypp.js"></script>
+  <script src="js\ytp-playlist.js"></script>
+  <!-- Ajax Mail JS -->
+  <script src="js\ajax-mail.js"></script>
+  <!-- Main JS -->
+  <script src="js\main.js"></script>
+
+  <link href="js/jsmaps/jsmaps/jsmaps.css" rel="stylesheet" type="text/css" />
+  <script src="js/jsmaps/jsmaps/jsmaps-libs.js" type="text/javascript"></script>
+  <script src="js/jsmaps/jsmaps/jsmaps-panzoom.js"></script>
+  <script src="js/jsmaps/jsmaps/jsmaps.min.js" type="text/javascript"></script>
+  <script src="js/jsmaps/maps/usa.js" type="text/javascript"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var numberItems = null;
+      $('#usa-map').JSMaps({
+        map: 'usa',
+        "textAreaWidth": 0,
+        onReady: function () {
+          $('#world-map-select').on('change', function () {
+            $('#world-map').trigger('stateClick', this.value);
+          });
+          $('#reset-button').on('click', function () {
+            $('#world-map').trigger('stateUnClick');
+          });
+        },
+        onStateClick: function (data) {
+          console.log(data);
+          $("#name_estado").text(data.name);
+          var name = data.name;
+          $.ajax({
+            type: 'GET',
+            url: 'parseo.php',
+            data: { estado: name },
+            dataType: 'json',
+            success: function (data) {
+              $(".list-group").empty().promise().done(function () {
+                $.each(data, function (index, element) {
+                  var html = "<a href='" + element.link + "' target='_blank' class='list-group-item list-group-item-action'>" +
+                    "<div class='d-flex w-100 justify-content-between'>" +
+                    "<h5 style='color: #0670BA'>" + element.title + "</h5>" +
+                    "</div>" +
+                    "<p style='font-size:14px'>" + element.description + "</p>" +
+                    "</a>";
+                  $('.list-group').append(html);
+                });
+                var monkeyList = new List('easyPaginateList', {
+                  valueNames: ['name'],
+                  page: 10,
+                  pagination: true
+                });
+
+                $('.btn-next').on('click', function () {
+                  $('.pagination .active').next().trigger('click');
+                })
+                $('.btn-prev').on('click', function () {
+                  $('.pagination .active').prev().trigger('click');
+                })
+                $('.btn-first').on('click', function () {
+                  var move = ($('.pagination .active').index())
+                  for (var i = 0; i < move; i++) {
+                    $('.pagination .active').prev().trigger('click');
+                  }
+                })
+                $('.btn-last').on('click', function () {
+                  var move = data.length - ($('.pagination .active').index() + 1)
+                  for (var i = 0; i < move; i++) {
+                    $('.pagination .active').next().trigger('click');
+                  }
+                })
+              });
+            }
+          });
+          //window.location.replace("mapanoticia.html?state=" + data.abbreviation);
+        }
+      });
+
+      /*<a href="#" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                  <h4>Scientists found massive black hole</h4>
+                                  <!--<small>2 days ago</small>-->
+                              </div>
+                              <p>Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</p>
+                          </a>*/
+
+      $.ajax({
+        type: 'GET',
+        url: 'parseo.php',
+        data: { estado: 'texas' },
+        dataType: 'json',
+        success: function (data) {
+          $.each(data, function (index, element) {
+            var html = "<a href='" + element.link + "' target='_blank' class='list-group-item list-group-item-action'>" +
+              "<div class='d-flex w-100 justify-content-between'>" +
+              "<h5 style='color: #0670BA'>" + element.title + "</h5>" +
+              "</div>" +
+              "<p style='font-size:14px'>" + element.description + "</p>" +
+              "</a>";
+            $('.list-group').append(html);
+          });
+          var monkeyList = new List('easyPaginateList', {
+            valueNames: ['name'],
+            page: 10,
+            pagination: true
+          });
+          $('.nav').append('<div class="btn-next"> > </div><div class="btn-last"> >> </div>');
+          $('.nav').prepend('<div class="btn-first"> << </div><div class="btn-prev"> < </div>');
+          $('.btn-next').on('click', function () {
+            $('.pagination .active').next().trigger('click');
+          })
+          $('.btn-prev').on('click', function () {
+            $('.pagination .active').prev().trigger('click');
+          })
+          $('.btn-first').on('click', function () {
+            var move = ($('.pagination .active').index())
+            for (var i = 0; i < move; i++) {
+              $('.pagination .active').prev().trigger('click');
+            }
+          })
+          $('.btn-last').on('click', function () {
+            var move = data.length - ($('.pagination .active').index() + 1)
+            for (var i = 0; i < move; i++) {
+              $('.pagination .active').next().trigger('click');
+            }
+          })
+        }
+      });
+
+      /*var monkeyList = new List('easyPaginateList', {
+        valueNames: ['name'],
+        page: 10,
+        pagination: true
+      });*/
+
+      /*$('.nav').append('<div class="btn-next"> > </div><div class="btn-last"> >> </div>');
+      $('.nav').prepend('<div class="btn-first"> << </div><div class="btn-prev"> < </div>');*/
+
+
+    });
+
+  </script>
+</body>
+
+</html>
