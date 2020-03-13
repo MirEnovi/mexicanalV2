@@ -52,15 +52,15 @@ table {
 	border-spacing: 0;
 }
 
-/*-- Google Font --*/
+/* -- Google Font -- */
 @font-face {font-family: "SkolaSans";
-    src: url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.eot");
+    src: url("./fonts/fontawesome-webfont.eot");
     src: url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.eot?#iefix") format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/6170997efd2dd111aff73345db859fe8.svg#SkolaSans") format("svg");
-}
+    url("./fonts/fontawesome-webfont.woff2") format("woff2"),
+    url("./fonts/fontawesome-webfont.ttf") format("truetype"),
+    url("./fonts/fontawesome-webfont.svg") format("svg");
+} 
 
 /*-- Common Style --*/
 *, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -285,7 +285,7 @@ button.navbar-toggler {
 	overflow-y: auto;
 	width: 100%;
 	min-height: 500px;
-	height: 520px;
+	height: 600px;
 }
 .alaire-programa {
 	padding: 1rem !important;
@@ -391,7 +391,7 @@ button.navbar-toggler {
 	margin: auto;
 }
 .slider-canales{
-	width: 90%;
+	width: 85%;
 	margin: auto;
 	height: auto;
 }
@@ -786,7 +786,7 @@ footer {
 @media only screen and (min-width : 1025px) and (max-width : 1440px) {
 	.titulo-slider.uno {
 		background-size: calc(100vw/1.35);
-		margin: -0.5px 0 0 -3rem;
+		margin: -0.4px 0 0 -3rem;
 	}
 	.mxcan {
 		height: 500px;

@@ -77,10 +77,10 @@
             <nav class="navbar navbar-expand-md ">
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-item nav-link menu-principal" href="#" style="background-color: #6712E7; color: #ffffff;">PROGRAMAS</a>
+                  <a class="nav-item nav-link menu-principal" href="/views/programas-destacados.html" style="background-color: #6712E7; color: #ffffff;">PROGRAMAS</a>
                   <a class="nav-item nav-link menu-principal" href="#">PROGRAMACIÓN</a>
                   <a class="nav-item nav-link menu-principal" href="#">INFORMACIÓN</a>
-                  <a class="nav-item nav-link menu-principal" href="#">INMIGRACIÓN</a>
+                  <a class="nav-item nav-link menu-principal" href="/views/mapa.html">INMIGRACIÓN</a>
                   <a class="nav-item nav-link menu-principal" href="#">FOTOS</a>
                   <a class="nav-item nav-link menu-principal" href="#">COCINA</a>
                   <a class="nav-item nav-link menu-principal" href="#">VIDEO</a>
@@ -95,7 +95,7 @@
     <div class="container-secciones">
       <section id="seccion-alaire">
         <div class="row">
-          <!-- inicia seccion statica al aire -->
+          <!-- inicia seccion estatica al aire -->
           <div class="col-12 col-lg-3 alaire m-0 p-0">
             <div class="row">
               <div class="alaire-titulo">
@@ -153,7 +153,7 @@
           <!-- termina seccion statica al aire -->
 
           <!--slider programas programas-destacados -->
-          <div class="col-12 col-lg-9  m-0 p-0" style="display: none;" >
+          <div id="slider-programas-id" class="col-12 col-lg-9 m-0 p-0" style="display: block;" >
             <!-- titulo -->
             <div class="row">
               <div class="col-12 m-0 p-0">
@@ -192,7 +192,7 @@
                     <h4>EL MUNDO DE ANDREA</h4>
                     <P>DOMINGO</P>
                     <H5>1pm Pacifico | 3pm Centro</H5>
-                    <a href="#">[Ver +]</a>
+                    <a class="selecion-programa">[Ver +]</a>
                   </div>
                 </div>
               </div>
@@ -207,7 +207,7 @@
           <!-- termina slider programas programas-destacados -->
           
           <!-- seccion programa destacado seleccionado -->
-          <div class="col-12 col-lg-9  m-0 p-0" style="display: block;">
+          <div id="programa-seleccionado-id" class="col-12 col-lg-9  m-0 p-0" style="display: none;">
             <div class="row">
               <div class="col-12 m-0 p-0 imagen-programa-seleccionado" style="background-image: url('../assets/images/seccion-programas-destacados/imagenprograma_seleccionado.png');">
                 <div class="row fondo">
@@ -226,6 +226,12 @@
                 <div class="row" style="justify-content: flex-end;">
                   <div class="boton-comentarios">
 
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 video-programa-seleccionado" style="display: none;">
+                    <iframe src="https://www.youtube.com/embed/Rw1mH7HlGFU" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="row">
