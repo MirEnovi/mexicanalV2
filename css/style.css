@@ -426,7 +426,7 @@ button.navbar-toggler {
 	background-color: #E6E6E6;
 }
 .fotos {
-	background-color: #CACACA;
+	/* background-color: #CACACA; */
 }
 .titulo-mxcan {
 	background-image: url("../assets/images/seccion-mxcan/Fondo-tiutlo-4.png");
@@ -445,7 +445,7 @@ button.navbar-toggler {
 	display: flex;
 }
 .titulo-descarga {
-	min-height: 2.7rem;
+	min-height: 3rem;
 }
 .titulo-mxcan h4, .titulo-fotos h4 {
 	margin: .5rem auto;
@@ -551,13 +551,9 @@ button.navbar-toggler {
 	color: #ffffff;
 	margin: 1rem 0;
 	position: relative;
-	/* transition: all 3.5s ease-in-out;
-	overflow: hidden; */
 
 }
-/* .foto-card:hover {
-	transform: translate(100%);
-} */
+
 .texto-card.azul {
 	background-image: url('../assets/images/seccion-cards/Fondo-titulo-7.png');
 }
@@ -719,12 +715,15 @@ footer {
 	.titulo-slider-canales {
 		min-height: 3.5rem;
 	}
+	.titulo-descarga {
+		min-height: 1.5rem;
+	}
+	.titulo-descarga h4 {
+		font-size: 15px;
+	}
 	/* seccion mxcanal y fotos */
 	.titulo-fotos, .titulo-mxcan {
 		min-height: 3.5rem;
-	}
-	.banner-tres {
-		height: 70rem;
 	}
 
 	/* seccion cards */
@@ -789,11 +788,8 @@ footer {
 		margin: -0.4px 0 0 -3rem;
 	}
 	.mxcan {
-		height: 500px;
-		padding: 1rem;
-	}
-	.mxcan {
-		min-height: 550px;
+		/* height: 500px; */
+		padding: 0 0 1.5rem;
 	}
 	.banner-tres {
 		height: 31rem;
@@ -843,6 +839,9 @@ footer {
 	}
 	.video-lista>div>iframe {
 		max-height: 5rem;
+	}
+	.mxcan, .fotos {
+		min-height: 40rem;
 	}
 	.foto {
 		height: calc(var(--widgetSize)/7);
