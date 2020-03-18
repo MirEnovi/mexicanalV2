@@ -23,6 +23,7 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/programacion.css">
 </head>
 
 <body>
@@ -93,7 +94,168 @@
     </header>
 
     <div class="container-secciones">
-    
+      <seccion class="nav-busqueda-programacion">
+        <div class="row zona-programacion-nav">
+          <a class="nav-zona"><p>ESTE</p></a>
+          <a class="nav-zona zona-activa" style="background-image: url('../assets/images/seccion-programacion/Fondo-Este.png');"><P>CENTRO</P></a>
+          <a class="nav-zona"><P>PACÍFICO</P></a>
+          <a class="nav-avanzada"><i class="fa fa-search" aria-hidden="true"></i><p>BUSQUEDA AVANZADA</p></a>
+          <a class="nav-dia"><p>Lunes <br> <span>13 MAYO</span></p></a>
+          <a class="nav-dia"><p>Martes <br> <span>13 MAYO</span></p></a>
+          <a class="nav-dia"><p>Miercoles <br> <span>13 MAYO</span></p></a>
+          <a class="nav-dia"><p>Jueves <br> <span>13 MAYO</span></p></a>
+          <a class="nav-dia"><p>Viernes <br> <span>13 MAYO</span></p></a>
+          <a class="nav-semanal"><i class="fa fa-angle-left" aria-hidden="true"></i><p>CALENDARIO SEMANAL</p><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a class="nav-mensual"><p>CALENDARIO MENSUAL</p></a>
+        </div>
+      </seccion>
+      <seccion class="busqueda-avanzada">
+        <div class="row">
+          <div class="col-6 col-lg-2 input-busqueda-avanzada">
+            <div style="margin: auto;">
+              <h4>Categoria</h4>
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="text" name="" id="">
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 input-busqueda-avanzada">
+            <div style="margin: auto;">
+              <h4>Rango de Horario</h4>
+              <div>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <label for="">De</label>
+                <input type="time" name="" id="">
+                <br/>
+                <label for="">a</label>
+                <input type="time" name="" id="">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 programacion-publicidad">
+            <img src="../assets/images/seccion-programas-destacados/Publi_Prog_Destacados.png" alt="">
+          </div>
+          <!-- calendario -->
+          <div class="col-12 col-lg-3 p-0 m-0">
+            <div class="month">
+              <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>
+                  Marzo<br>
+                  <span style="font-size:18px">2020</span>
+                </li>
+              </ul>
+            </div>
+            
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
+            
+            <ul class="days">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li><span class="active">10</span></li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>
+          </div>
+        </div>
+        <!-- seccion programa uno -->
+        <div class="row" style="border-bottom: 1px #D0D0D0 solid; margin: 0 0 2rem 0;">
+          <div class="col-6 col-lg-2 p-0 m-0" style="display: flex;">
+            <h3 style="margin: auto;">
+              5:00 AM7              
+            </h3>
+          </div>
+          <div class="col-6 col-lg-2 p-0 m-0 programacion-imagen">
+            <img src="../assets/images/seccion-programacion/programa.png" alt="">
+          </div>
+          <div class="col-12 col-lg-5 p-10 m-0">
+            <h3>VITRAL</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque impedit veritatis minima rem a molestiae porro quas, aperiam placeat eos temporibus culpa sequi blanditiis ad quae minus asperiores adipisci.</P>
+          </div>
+          <div class="col-12 col-lg-3 p-0 m-0" style="display:flex;">
+            <div style="margin: auto;">
+              <div class="row" style="margin: 1rem 0 0 0;">
+                <button class="btn" style="background:#27AAE2; color:#ffffff;">Revista Informativa</button>
+                <button class="btn" style="background:#424244; color:#ffffff;">AG</button>
+              </div>
+              <div class="row">
+                <div class="col-12" display>
+                  <div class="progress" style="margin: 1rem 0 0 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 25%; background:#27AAE2;" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- seccion programa dos -->
+        <div class="row" style="border-bottom: 1px #D0D0D0 solid; margin: 0 0 2rem 0;">
+          <div class="col-6 col-lg-2 p-0 m-0" style="display: flex;">
+            <h3 style="margin: auto;">
+              5:00 AM7
+            </h3>
+          </div>
+          <div class="col-6 col-lg-2 p-0 m-0 programacion-imagen">
+            <img src="../assets/images/seccion-programacion/programa.png" alt="">
+          </div>
+          <div class="col-12 col-lg-5 p-10 m-0">
+            <h3>VITRAL</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque impedit veritatis minima rem a molestiae
+              porro quas, aperiam placeat eos temporibus culpa sequi blanditiis ad quae minus asperiores adipisci.</P>
+          </div>
+          <div class="col-12 col-lg-3 p-0 m-0" style="display:flex;">
+            <div style="margin: auto;">
+              <div class="row" style="margin: 1rem 0 0 0;">
+                <button class="btn" style="background:#F36523; color:#ffffff;">Revista Informativa</button>
+                <button class="btn" style="background:#424244; color:#ffffff;">AG</button>
+              </div>
+              <div class="row">
+                <div class="col-12" >
+                  <div class="progress" style="margin: 1rem 0 0 0;">
+                    <div class="progress-bar" role="progressbar" style="width: 25%; background:#F36523;" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </seccion>
     </div>
   </div>
 
@@ -184,6 +346,7 @@
 
   <!-- js extra -->
   <script src="../js/slider.js"></script>
+  <script src="../js/programacion.js"></script>
 </body>
 
 </html>
