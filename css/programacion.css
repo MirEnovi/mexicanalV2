@@ -77,8 +77,8 @@
 .input-busqueda-avanzada input {
   height: 2rem;
   width: -webkit-fill-available;
-  /* border: .3px solid rgba(0, 1, 2, 0.44); */
-  /* box-shadow: inset 70px -74px 31px -84px rgba(0, 0, 0, 0.75); */
+  border-radius: 10px;
+  border: 1px solid rgba(0, 1, 2, 0.44);
 }
 /* calendario */
 .month {
@@ -154,6 +154,16 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.seccion-botones-programa {
+  border-bottom: 1px #D0D0D0 solid;
+  padding: 1rem 0 1rem 0;
+}
+.boton-programa {
+  color: #ffffff;
+  font-size: calc(5px + 1vmin);
+  max-width: calc(6rem + 1vmin);
+  margin: 0 10px 0 0;
 }
 
 /* small screens ----------- */
