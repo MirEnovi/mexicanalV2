@@ -535,16 +535,22 @@ button.navbar-toggler {
 }
 
 /* seccion cards */
+.seccion-cards {
+	display: flex;
+	justify-content: space-around;
+	height: 300px;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
 .card-container {
 	display: flex;
-	flex-direction: inherit;
-	overflow: hidden;
+	margin: 0 5px;
 }
 .foto-card {
 	background-size: auto;
 	background-position: top;
 	background-repeat: no-repeat;
-	min-height: 15rem;
+	min-height: 16.5rem;
 	width: 100%;
 	color: #ffffff;
 	margin: 1rem 0;
@@ -575,11 +581,11 @@ button.navbar-toggler {
 }
 .info-card {
 	background-color: #F1F2F2;
-	width: initial;
+	width: 30rem;
 	height: auto;
 	padding: 1rem;
-	margin: auto;
-	display: none;
+	margin: 16px auto 11px;
+	/* display: none; */
 }
 
 
@@ -848,8 +854,10 @@ footer {
 		min-height: 3.5rem;
 	}
 	.foto-card {
-		min-height: 19rem;
-		width: 97%;
+		margin: 1.5rem 0;
+	}
+	.texto-card {
+		min-width: 320px;
 	}
 
 	/* footer */
