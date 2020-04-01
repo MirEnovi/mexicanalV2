@@ -338,6 +338,15 @@ button.navbar-toggler {
 	height: auto;
 	object-fit: cover;
 }
+.text-descripcion-slider-home {
+	position: absolute;
+	font-size: 17px;
+	color: white;
+	top: 39%;
+	right: 0px;
+	width: 35%;
+	z-index: 2;
+}
 .banner-dos {
 	padding: 1.5rem;
 	display: flex;
@@ -390,31 +399,9 @@ button.navbar-toggler {
 .titulo-slider-canales h4 {
 	margin: auto;
 }
-.slider-canales{
-	width: 85%;
-	margin: auto;
-	height: auto;
+.slider-canales img {
+	padding: 10px;
 }
-.slider-canales div {
-	width: 100%;
-	height: 100%;
-	display: flex !important;
-	justify-content: center;
-}
-.slider-canales>div>img {
-	width: auto;
-	height: 95%;
-	max-width: initial;
-	margin: auto;
-}
-.slick-slide img {
-	object-fit: cover;
-	max-width: 90%;
-	height: auto;
-}
-/* .slick-next:before {
-	content: url('../assets/images/slider-canales/Flecha_derecha.png');
-} */
 
 /* seccion mxcan y fotos */
 .mxcan, .fotos {
@@ -667,8 +654,10 @@ footer {
 		width: 100vw;
 		text-align: center;
 	}
-	button.navbar-toggler {
+	button.navbar-toggler {	
 		display: block;
+    position: fixed;
+    z-index: 101;
 	}
 
 	/* primera seccion */

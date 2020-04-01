@@ -165,6 +165,9 @@
   max-width: calc(6rem + 1vmin);
   margin: 0 10px 0 0;
 }
+.progress {
+  height: 5px;
+}
 
 /* small screens ----------- */
 @media only screen and (max-width : 670px) {
