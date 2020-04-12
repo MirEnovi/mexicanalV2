@@ -34,10 +34,14 @@
   color: #797A7E !important;
 }
 .zona-activa {
-  background-image: url(../assets/images/seccion-programacion/Fondo-Este.png);
+  background-image: url('../assets/images/seccion-programacion/Fondo-Este.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: transparent;
+  margin: 0 -5px -15px;
+  height: 6rem;
+  z-index: 101;
+  color: #fff !important;
 }
 .nav-avanzada, .nav-semanal {
   background-color: #000100;

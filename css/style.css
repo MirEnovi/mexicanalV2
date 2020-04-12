@@ -312,7 +312,7 @@ button.navbar-toggler {
 	background-size: cover;
 	width: 100%;
 	min-height: 7rem;
-	margin: 0;
+	margin: .5px 0 0 0;
 }
 .titulo-slider.uno,
 .titulo-slider.dos {
@@ -540,7 +540,7 @@ button.navbar-toggler {
 	min-height: 16.5rem;
 	width: 100%;
 	color: #ffffff;
-	margin: 1rem 0;
+	margin: 2rem 0;
 	position: relative;
 
 }
@@ -572,7 +572,7 @@ button.navbar-toggler {
 	height: auto;
 	padding: 1rem;
 	margin: 16px auto 11px;
-	/* display: none; */
+	display: none;
 }
 
 

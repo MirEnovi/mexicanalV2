@@ -1,3 +1,134 @@
+
 .container-informacion {
   display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+}
+.section-noticias-informacion {
+  width: 70vw;
+}
+.container-noticias {
+  max-height: 270px;
+  /* height: auto; */
+}
+.titulo-tema, .titulo-noticia {
+  border-left: 3px solid transparent;
+  border-image: url('../assets/images/header/Barra_menu.png') 10 stretch;
+  color: #ffffff;
+  font-size: calc(5px + 1vmin);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+.titulo-tema {
+  background-color: #66A8DE;
+}
+.titulo-noticia {
+  background-color: #2F38B7;
+}
+.noticias-informacion {
+  height: 260px;
+  overflow-y: scroll;
+  text-align: start;
+}
+.noticias-informacion::-webkit-scrollbar {
+  width: 1px;
+}
+.noticias-informacion::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+.noticias-informacion a {
+  padding: 10px;
+  font-size: calc(6px + 1vmin);
+}
+.receta-slide {
+  height: 2rem;  
+  background-color: #ffffff;
+}
+.receta-slide-img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.receta-slide-tarjeta {
+  min-height: 100px;
+  background-color: #F07726;
+  color: #ffffff;
+  height: 100px;
+  margin: -6px 0 0 0;
+  text-align: center;
+  padding: 5px 15px 10px 5px;
+}
+.receta-slide-tarjeta p{
+  font-size: calc(1px + 1vmin);
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  font-weight: lighter;
+}
+.receta-slide-tarjeta .titulo{
+  font-size: calc(5px + 1vmin) !important;
+  line-height: 1.5;
+}
+.noticias-informacion img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.noticias-informacion-tarjeta {
+  font-size: calc(5px + 1vmin);
+  background-image: url('../assets/images/seccion-informacion/3.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: -180px 0 0 0;
+  z-index: 101;
+  position: inherit;
+  max-width: 100%;
+  /* height: 300px; */
+  min-height: 325px;
+  padding: 7rem 10px 0;
+  color: #ffffff;
+  line-height: 1.4;
+  font-weight: 100;
+  text-align: justify;
+}
+.noticias-informacion-tarjeta .titulo {
+  text-align: center !important;
+  font-size: calc(10px + 1vmin) !important;
+  line-height: 1.5;
+}
+.noticias-informacion-tarjeta a {
+  width: 95%;
+  text-align: right;
+}
+.receta-resumen-tarjeta {
+  background-size: cover;
+  width: 107%;
+  height: auto;
+  min-height: 104px;
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/seccion-informacion/4.png');
+  position: relative;
+  font-size: calc(3px + 1vmin);
+  margin: 0 0 0 -25px;
+  z-index: 104;
+  padding: 5px 25PX;
+  color: #ffffff;
+  line-height: 1.3;
+  font-weight: 100;
+  text-align: center;
+}
+.informacion-publicidad {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 2rem 0;
+}
+.informacion-publicidad img {
+  width: 90%;
+  height: auto;
+  margin: auto;
 }
