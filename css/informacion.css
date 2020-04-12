@@ -132,3 +132,139 @@
   height: auto;
   margin: auto;
 }
+
+.titulo-noticia-2, .titulo-notas-relacionadas {
+  color: #ffffff;
+  font-size: calc(8px + 1vmin);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  height: 4.5rem;
+}
+.titulo-noticia-2{
+  background-size: 100% 100%;
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/seccion-informacion/5.png');
+}
+.titulo-notas-relacionadas {
+  background-color: #1DA1F3;
+}
+.titulo-noticia-detalle {
+  color: #1E6AA2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.notas-relacionadas-detalle {
+  font-size: calc(5px + 1vmin);
+  position: inherit;
+  max-width: 100%;
+  padding: 10px;
+  line-height: 1.4;
+  font-weight: 100;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  overflow-y: auto;
+  background-color: #F2F2F2;
+}
+.container-noticia-informacion {
+  display: flex;
+  height: 700px;
+}
+.imagen-noticias-informacion {
+  padding: 30px 10px 10px;
+}
+.imagen-noticias-informacion img {
+  width: 100%;
+}
+.titulo-imagen-noticias-informacion {
+  background-color: #A6D8F9;
+  width: 100%;
+  height: 3.5rem;
+  padding: 5px 25px;
+  display: flex;
+}
+.texto-noticias-informacion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 2rem;
+  text-align: justify;
+}
+.boton-comentarios {
+  background-image: url('../assets/images/seccion-programas-destacados/Agregar_Comentario.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  margin: -25rem 0 0 0;
+}
+.notas-relacionadas-detalle p {
+  padding: 10px;
+}
+.redes-informacion {
+  display: flex;
+  justify-content: flex-end;
+}
+.redes-informacion img {
+  height: 1rem;
+  width: auto;
+  margin: 0 .5rem;
+}
+
+
+/* comentarios */
+.programa-comentarios {
+  background-color: #E6E6E6;
+  max-height: 400px;
+}
+.comentarios-titulo {
+  background-image: url('../assets/images/seccion-programas-destacados/Fondo_titulo_12.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  min-height: 6rem;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.comentarios-titulo h3 {
+  color: #ffffff;
+  margin: auto;
+}
+.comentarios-programa-seleccionado {
+  overflow-y: auto;
+  width: 100%;
+  min-height: 150px;
+  height: 300px;
+}
+.alaire-programa {
+  padding: 1rem !important;
+}
+
+/* XLarge screens ----------- */
+@media only screen and (min-width : 1650px) {
+  .programa-comentarios {
+    height: 380px;
+    max-height: 500px;
+  }
+  .redes-informacion img {
+    margin: .5rem .5rem 0;
+  }
+  .comentarios-programa-seleccionado {
+    height: 285px;
+  }
+  .boton-comentarios {
+    margin: -27rem 0 0 0;
+  }
+}
