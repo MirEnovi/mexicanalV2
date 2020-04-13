@@ -80,3 +80,18 @@
   width: fit-content;
   padding: 0 1.5rem;
 }
+.publicidad-fotos img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 4rem 2rem 1rem;
+}
+.slider-img img {
+  /* width: 10rem !important; */
+  margin-top: 4rem;
+  transition: all 1.5s ease;
+}
+.slider-img img:hover {
+  transform: scale3d(1.5, 1.5, 1.5);
+  z-index: 101;
+}

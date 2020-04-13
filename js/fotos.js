@@ -1,22 +1,19 @@
 
 $(document).ready(function () {
   (function ($) {
-    $('.selecion-programa').on('click', () => {
-      $('#programa-seleccionado-id').css('display', 'block');
-      $('#slider-programas-id').css('display', 'none');
-    })
-
+    
     // slider
     $('.owl-carousel').owlCarousel({
       loop: true,
       lazyLoad: true,
-      margin: 0,
+      margin: 15,
       responsiveClass: true,
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: false,
       nav: false,
       dots: false,
+      stopOnHover : true,
       responsive: {
         0: {
           items: 1,
@@ -27,7 +24,7 @@ $(document).ready(function () {
           loop: true
         },
         1000: {
-          items: 5,
+          items: 4,
           loop: true
         }
       }
