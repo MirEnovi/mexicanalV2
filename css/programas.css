@@ -1,18 +1,15 @@
 .titulo-pd {
   background-image: url('../assets/images/seccion-programas-destacados/Fondo-titulo-pd.png');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: 100% 105%;
   color: #ffffff;
   display: flex;
   margin: 0 0 -1rem 0;
-  
   width: 100%;
   height: auto;
   min-height: 6.8rem;
-
   display: flex;
-  justify-content: center
 }
 .titulo-pd h3,
 .titulo-programa-selec div {
@@ -36,7 +33,7 @@
   background-repeat: no-repeat;
   min-height: 10rem;
   height: fit-content;
-  width: 25rem;
+  width: auto;
   margin: -2rem 30% 0;
   color: #ffffff;
   display: flex;
@@ -185,5 +182,18 @@
   .alaire-programas {
     min-height: 100px;
     height: 115px;
+  }
+}
+
+/* Medium screens ----------- */
+@media only screen and (min-width : 671px) and (max-width : 1024px) {}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1025px) and (max-width : 1400px) {
+  .titulo-pd {
+    margin: 0 0 -3rem 0;
+  }
+  .titulo-programa-selec {
+    margin: -4.5rem 30% 0;
   }
 }

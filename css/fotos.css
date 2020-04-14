@@ -89,9 +89,11 @@
 .slider-img img {
   /* width: 10rem !important; */
   margin-top: 4rem;
-  transition: all 1.5s ease;
+  position: relative;
+  /* transition: all 1.5s ease !important; */
+
 }
 .slider-img img:hover {
   transform: scale3d(1.5, 1.5, 1.5);
-  z-index: 101;
+  z-index: 101 !important;
 }
