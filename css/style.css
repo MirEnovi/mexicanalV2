@@ -538,7 +538,7 @@ button.navbar-toggler {
 	background-position: top;
 	background-repeat: no-repeat;
 	min-height: 16.5rem;
-	width: 100%;
+	/* width: 100%; */
 	color: #ffffff;
 	margin: 2rem 0;
 	position: relative;
@@ -559,7 +559,7 @@ button.navbar-toggler {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	min-height: inherit;
-	width: 100%;
+	width: 25rem;
 	display: flex;
 	align-items: flex-end;
 }
@@ -568,13 +568,15 @@ button.navbar-toggler {
 }
 .info-card {
 	background-color: #F1F2F2;
-	width: 30rem;
+	width: 25rem;
 	height: auto;
 	padding: 1rem;
-	margin: 16px auto 11px;
+	margin: 33px auto 11px;
 	display: none;
 }
-
+.info-card-active {
+	display: block !important;
+}
 
 /* footer */
 footer {
