@@ -319,7 +319,7 @@
   }
 }
 
-/* small screens ----------- */
+/* Tabs ----------- */
 @media only screen and (min-width : 1024px) and (max-width : 1439px) {
   .noticias-informacion-tarjeta {
     margin: -165px 0 0 0;

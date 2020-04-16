@@ -80,20 +80,84 @@
   width: fit-content;
   padding: 0 1.5rem;
 }
-.publicidad-fotos img {
+.publicidad-fotos img, .publicidad-fotos-2 img {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+.publicidad-fotos-2 img {
+  padding: 1rem 2rem;
+}
+.publicidad-fotos img {
   padding: 4rem 2rem 1rem;
 }
 .slider-img img {
-  /* width: 10rem !important; */
   margin-top: 4rem;
   position: relative;
-  /* transition: all 1.5s ease !important; */
-
 }
 .slider-img img:hover {
   transform: scale3d(1.5, 1.5, 1.5);
   z-index: 101 !important;
+}
+.barra-instagram-1 {
+  background-image: url('../assets/images/seccion-fotos/7.png');
+  background-size: 100% 100%;
+  background-position: unset;
+  background-repeat: no-repeat;
+}
+.barra-instagram-2 {
+  color: #8E8E8E;
+}
+.barra-instagram-1, .barra-instagram-2 {
+  background-color: #F2F2F2;
+  color: #ffffff;
+  font-size: calc(8px + 1vmin);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  height: 3.5rem;
+}
+.titulo-fotos-a {
+  color: #8C8C8C;
+  width: 100%;
+  text-align: inherit;
+  padding: 0 1rem;
+}
+.titulo-fotos-b {
+  color: #375890;
+  width: 100%;
+  text-align: inherit;
+  padding: 0 1rem;
+  font-size: calc(10px + 1vmin);
+  margin: 1rem 0;
+}
+.titulo-fotos-a p {
+  font-size: calc(8px + 1vmin);
+}
+
+.titulo-fotos-a p>span {
+  font-size: calc(9px + 1vmin);
+  color: #222121;
+}
+
+.album-element {
+  width: 100%;
+  height: auto;
+}
+.album-element img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* small screens ----------- */
+@media only screen and (max-width : 670px) {
+  .publicidad-fotos img {
+    padding: 4rem 2rem 1rem;
+    max-height: 450px;
+    padding: 4rem;
+  }
 }
