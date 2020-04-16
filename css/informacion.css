@@ -179,7 +179,7 @@
   /* height: 118rem; */
 }
 .container-noticia-informacion {
-  /* display: flex; */
+  display: flex;
   height: 700px;
 }
 .imagen-noticias-informacion {
@@ -257,14 +257,37 @@
 }
 /* small screens ----------- */
 @media only screen and (max-width : 670px) {
+  .container-noticias {
+    max-height: fit-content;
+  }
+  .titulo-tema, .titulo-noticia {
+    font-size: calc(15px + 1vmin);
+  }
   .notas-relacionadas-detalle {
     font-size: calc(10px + 1vmin);
   }
   .alaire-programa p, .titulo-notas-relacionadas p {
     font-size: calc(10px + 1vmin);
   }
+  .receta-slide-tarjeta .titulo {
+    font-size: calc(15px + 1vmin) !important;
+  }
+  .receta-slide-tarjeta p {
+    font-size: calc(8px + 1vmin);
+  }
+  .receta-resumen-tarjeta {
+    margin: 0;
+    font-size: calc(9px + 1vmin);
+  }
+  .noticias-informacion-tarjeta .titulo {
+    text-align: center !important;
+    font-size: calc(17px + 1vmin) !important;
+  }
+  .noticias-informacion-tarjeta {
+    font-size: calc(9px + 1vmin);
+  }
   .section-noticias-informacion {
-    height: 0vh;
+    height: auto;
   }
   .container-informacion-1 {
     height: 85rem;
@@ -274,7 +297,20 @@
   }
   .boton-comentarios {
     z-index: 1005;
-    margin: 17rem 0 0 0;
+    margin: 17.15rem 0 0 0;
+  }
+  .noticias-informacion {
+    text-align: center;
+  }
+  .noticias-informacion a {
+    padding: 10px;
+    font-size: calc(10px + 1vmin);
+  }
+  .container-noticia-informacion {
+    display: inherit;
+  }
+  .comentarios-programa-seleccionado {
+    height: 200px;
   }
 }
 
