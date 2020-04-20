@@ -155,9 +155,11 @@
 
 /* small screens ----------- */
 @media only screen and (max-width : 670px) {
+  .publicidad-fotos-2 img {
+    padding: 10px;
+}
   .publicidad-fotos img {
-    padding: 4rem 2rem 1rem;
     max-height: 450px;
-    padding: 4rem;
+    padding: 1rem 0;
   }
 }

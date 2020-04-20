@@ -218,8 +218,14 @@ nav {
 .dias {
 	margin: .4rem 0 0 0;
 	display: block;
-	font-size: calc(var(--widgetSize)/65);
+	font-size: calc(var(--widgetSize)/1vmin);
 	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.dias p {
+	padding: 0 !important;
 }
 button.navbar-toggler {
 	background-color: rgb(255, 146, 31);
@@ -256,6 +262,7 @@ button.navbar-toggler {
 }
 .container-secciones {
 	height: auto;
+	min-height: 100vh;
 }
 
 /* seccion uno */
@@ -601,6 +608,7 @@ footer {
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: 10px !important;
+	background-color: transparent;
 }
 .link-footer {
 	width: calc(73.3vw/7);

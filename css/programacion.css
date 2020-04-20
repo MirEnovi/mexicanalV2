@@ -11,7 +11,7 @@
   font-size: calc(8px + 1vmin);
 }
 .zona-programacion-nav a {
-  width: calc(99.8vw/11);
+  width: calc(99.8vw/13);
   text-align: center;
   padding: 1rem .5rem;
   min-height: 5rem;
@@ -194,7 +194,7 @@
 /* XLarge screens ----------- */
 @media only screen and (min-width : 1650px) {
   .zona-programacion-nav a {
-    width: initial;
+    width: calc(69.5vw/11);
     padding: 0 2.5rem;
   }
   .nav-avanzada p,
@@ -203,5 +203,6 @@
   }
   .zona-programacion-nav {
     font-size: calc(4px + 1vmin);
+    width: 100%;
   }
 }
