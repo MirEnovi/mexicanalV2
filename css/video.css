@@ -1,0 +1,70 @@
+.publicidad-fotos {
+  display: flex;
+  width: 100%;
+}
+.publicidad-fotos img {
+  padding: 4rem 0;
+  margin: auto;
+}
+.barra-video {
+  margin: 0 0 1.5rem;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: calc(8px + 1vmin);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  min-height: 4.5rem;
+}
+.slider-video-element {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.slider-video-element iframe {
+  margin: auto;
+}
+.texto-video {
+  background-color: rgba(14, 13, 13, 0.479);
+}
+
+.promos {
+  display: block;
+  padding: 3rem;
+}
+.container-videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.elemento-galeria-video img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 5px;
+}
+
+.carousel-caption {
+
+  padding: 0;
+  height: 2rem;
+}
+
+@media only screen and (min-width : 1680px) {
+  .slider-video-element {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width : 1680px) {
+  .slider-video-element {
+    padding: 0 5rem;
+  }
+}
