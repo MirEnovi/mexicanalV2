@@ -1,208 +1,263 @@
 .nav-busqueda-programacion {
-  display: block;
+	display: block;
 }
+
 .zona-programacion-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100vw;
-  font-size: calc(8px + 1vmin);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100vw;
+	font-size: calc(8px + 1vmin);
 }
+
 .zona-programacion-nav a {
-  width: calc(99.8vw/13);
-  text-align: center;
-  padding: 1rem .5rem;
-  min-height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: calc(99.8vw/13);
+	text-align: center;
+	padding: 1rem .5rem;
+	min-height: 4rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 .nav-avanzada i,
 .nav-semanal i {
-  font-size: calc(20px + 1vmin);
-  padding: 0 .5rem;
+	font-size: calc(20px + 1vmin);
+	padding: 0 .5rem;
 }
+
 .nav-avanzada p,
 .nav-semanal p {
-  font-size: calc(2px + 1vmin);
+	font-size: calc(1.5px + 1vmin);
 }
+
 .nav-zona {
-  height: 100%;
-  background-color: #929397;
-  color: #797A7E !important;
+	height: 100%;
+	background-color: #929397;
+	color: #797A7E !important;
 }
-.zona-activa {
-  background-image: url('../assets/images/seccion-programacion/Fondo-Este.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  margin: 0 -5px -15px;
-  height: 6rem;
-  z-index: 101;
-  color: #fff !important;
+
+.zona-activa-este, .zona-activa-pacifico, .zona-activa-centro {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	margin: 0 -5px -15px;
+	height: 4.9rem !important;
+	z-index: 101;
+	color: #fff !important;
 }
-.nav-avanzada, .nav-semanal {
-  background-color: #000100;
-  color: #ffffff !important;
+.zona-activa-este {
+	background-image: url('../assets/images/seccion-programacion/Fondo-Este.png');
 }
+.zona-activa-pacifico {
+	background-image: url('../assets/images/seccion-programacion/Fondo-pacifico.png');
+}
+.zona-activa-centro {
+	background-image: url('../assets/images/seccion-programacion/Fondo-centro.png');
+}
+
+
+.nav-avanzada,
+.nav-semanal {
+	background-color: #000100;
+	color: #ffffff !important;
+}
+
 .nav-dia {
-  background-color: #3E04B0;
-  color: #735DB6;
+	background-color: #3E04B0;
+	color: #735DB6;
 }
+
 .nav-mensual {
-  background-color: #4D4D4D;
-  color: rgb(243, 242, 242);
+	/* background-color: #4D4D4D; */
+	color: rgb(243, 242, 242) !important;
+	font-size: calc(4px + 1vmin);
+	background-image: url('../assets/images/seccion-programacion/fondo-mensual.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	margin: 0 0px -21px;
+	height: 5.3rem !important;
+	width: 7.5rem !important;
+	z-index: 101;
 }
+
 .nav-select-zona {
-  background-image: url('../assets/images/seccion-programacion/Fondo-Este.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+	background-image: url('../assets/images/seccion-programacion/Fondo-Este.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
+
 .programacion-publicidad {
-  width: 100%;
-  height: auto;
-  display: flex;
+	width: 100%;
+	height: auto;
+	display: flex;
 }
+
 .programacion-publicidad img {
-  margin: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 10rem;
-  object-fit: cover;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 10rem;
+	object-fit: cover;
 }
+
 .input-busqueda-avanzada {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
+
 .input-busqueda-avanzada input {
-  height: 2rem;
-  width: -webkit-fill-available;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 1, 2, 0.44);
+	height: 2rem;
+	width: -webkit-fill-available;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 1, 2, 0.44);
 }
+
+#busqueda {
+	display: none;
+}
+
 /* calendario */
+#calendario {
+	display: none;
+}
 .month {
-  padding: 1rem;
-  width: 100%;
-  background: #49068F;
-  text-align: center;
+	padding: 1rem;
+	width: 100%;
+	background: #49068F;
+	text-align: center;
 }
 
 .month ul {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 
 .month .prev {
-  float: left;
-  padding-top: 10px;
+	float: left;
+	padding-top: 10px;
 }
 
 .month .next {
-  float: right;
-  padding-top: 10px;
+	float: right;
+	padding-top: 10px;
 }
 
 .weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
+	margin: 0;
+	padding: 10px 0;
+	background-color: #ddd;
 }
 
 .weekdays li {
-  display: inline-block;
-  width: 12.6%;
-  color: #666;
-  text-align: center;
+	display: inline-block;
+	width: 12.6%;
+	color: #666;
+	text-align: center;
 }
 
 .days {
-  padding:  0;
-  background: #eee;
-  margin: 0;
+	padding: 0;
+	background: #eee;
+	margin: 0;
 }
 
 .days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 12.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 12px;
-  color: #777;
+	list-style-type: none;
+	display: inline-block;
+	width: 12.6%;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: #777;
 }
 
 .days li .active {
-  padding: 5px;
-  background: #49068F;
-  color: white !important
+	padding: 5px;
+	background: #49068F;
+	color: white !important
 }
 
 /* seccion programacion */
 .programacion-imagen {
-  width: 100;
+	width: 100;
 }
+
 .programacion-imagen img {
-  padding: .5rem;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+	padding: .5rem;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
+
 .seccion-botones-programa {
-  border-bottom: 1px #D0D0D0 solid;
-  padding: 1rem 0 1rem 0;
+	border-bottom: 1px #D0D0D0 solid;
+	padding: 1rem 0 1rem 0;
 }
+
 .boton-programa {
-  color: #ffffff;
-  font-size: calc(5px + 1vmin);
-  max-width: calc(6rem + 1vmin);
-  margin: 0 10px 0 0;
+	color: #ffffff;
+	font-size: calc(5px + 1vmin);
+	max-width: calc(6rem + 1vmin);
+	margin: 0 10px 0 0;
 }
+
 .progress {
-  height: 5px;
+	height: 5px;
 }
 
 /* small screens ----------- */
 @media only screen and (max-width : 670px) {
-  .zona-programacion-nav a {
-    width: calc(99.8vw/3);
-  }
-    .nav-avanzada p,
-    .nav-semanal p {
-      font-size: calc(5px + 1vmin);
-    }
+	.zona-programacion-nav a {
+		width: calc(99.8vw/3);
+	}
+
+	.nav-avanzada p,
+	.nav-semanal p {
+		font-size: calc(5px + 1vmin);
+	}
 }
 
 /* Medium screens ----------- */
 @media only screen and (min-width : 671px) and (max-width : 1024px) {
-  .zona-programacion-nav {
-    font-size: calc(3px + 1vmin);
-  }
+	.zona-programacion-nav {
+		font-size: calc(3px + 1vmin);
+	}
 }
 
 /* XLarge screens ----------- */
 @media only screen and (min-width : 1650px) {
-  .zona-programacion-nav a {
-    width: calc(69.5vw/11);
-    padding: 0 2.5rem;
-  }
-  .nav-avanzada p,
-  .nav-semanal p {
-    font-size: calc(1px + 1vmin);
-  }
-  .zona-programacion-nav {
-    font-size: calc(4px + 1vmin);
-    width: 100%;
-  }
+	.zona-programacion-nav a {
+		width: calc(69vw/11);
+		padding: 0 2.5rem;
+	}
+
+	.nav-avanzada p,
+	.nav-semanal p {
+		font-size: calc(1px + 1vmin);
+	}
+
+	.zona-programacion-nav {
+		font-size: calc(4px + 1vmin);
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width : 1650px) {
+	.zona-programacion-nav a {
+		width: calc(59.5vw/11);
+	}
 }

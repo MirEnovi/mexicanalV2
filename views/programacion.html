@@ -2,359 +2,396 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Mexicanal</title>
-  <!-- logo -->
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
+	<title>Mexicanal</title>
+	<!-- logo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!-- Icon Font CSS -->
-  <script src="https://use.fontawesome.com/35a4bca8d9.js"></script>
+	<!-- Icon Font CSS -->
+	<script src="https://use.fontawesome.com/35a4bca8d9.js"></script>
 
-  <!-- slider slick -->
-  <link rel="stylesheet" type="text/css" href="../css/slick.css" />
-  <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
+	<!-- slider slick -->
+	<link rel="stylesheet" type="text/css" href="../css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
 
-  <!-- styles -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/programacion.css">
+	<!-- styles -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/programacion.css">
 </head>
 
 <body>
-  <div class="container-principal">
-    <header>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="row">
-        <div class="col-md-3 col-12 m-0 p-0">
-          <div class="logo">
-            <a href="/index.html">
-              <img src="../assets/images/header/Logo-Menu.png">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-9 col-12 m-0 p-0">
-          <div class="row">
-            <div class="banner-header">
-              <img src="../assets/images/header/MXCAN-ban.gif" alt="publicidad">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <nav class="nav col-md-12  col-lg-5">
-              <a class="btn-search">
-                <i class="fa fa-search"></i>
-              </a>
-              <div class="header-search-form">
-                <form action="#">
-                  <input type="text" placeholder="BUSCAR">
-                </form>
-              </div>
-              <a class="nav-link" href="#">CONTÁCTANOS</a>
-              <a class="nav-link" href="#">MEDIA KIT</a>
-              <a class="nav-link" href="#">LOGIN</a>
-            </nav>
-            <div class="dias col-md-12 col-lg-4">
-              <p >Martes 13 de Febrero, 2020<span class="horas">9:05 AM Centro</span></p>
-            </div>
-            <div class="col-md-12 col-lg-3 redes">
-              <div>
-                <img src="../assets/images/header/face.png">
-                <img src="../assets/images/header/twi.png">
-                <img src="../assets/images/header/you.png">
-                <img src="../assets/images/header/insta.png">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <nav class="navbar navbar-expand-md ">
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link menu-principal" href="/views/programas-destacados.html"
-                    >PROGRAMAS</a>
-                  <a class="nav-item nav-link menu-principal" style="background-color: #49068F; color: #ffffff;" href="/views/programacion.html">PROGRAMACIÓN</a>
-                  <a class="nav-item nav-link menu-principal" href="/views/informacion.html">INFORMACIÓN</a>
-                  <a class="nav-item nav-link menu-principal" href="/views/inmigracion.html">INMIGRACIÓN</a>
-                  <a class="nav-item nav-link menu-principal" href="/views/fotos.html">FOTOS</a>
-                  <a class="nav-item nav-link menu-principal" href="/views/cocina.html">COCINA</a>
-                  <a class="nav-item nav-link menu-principal" href="/views/video.html">VIDEO</a>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+	<div class="container-principal">
+		<header>
+			<button id="menu-deplegable" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="row">
+				<div class="col-md-3 col-12 m-0 p-0">
+					<div class="logo">
+						<a href="/index.html">
+							<img src="../assets/images/header/Logo-Menu.png">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-9 col-12 m-0 p-0">
+					<div class="row">
+						<div class="banner-header">
+							<img src="../assets/images/header/MXCAN-ban.gif" alt="publicidad">
+						</div>
+					</div>
+					<div class="row mt-3">
+						<nav class="nav col-md-12  col-lg-5">
+							<a class="btn-search">
+								<i class="fa fa-search"></i>
+							</a>
+							<div class="header-search-form">
+								<form action="#">
+									<input type="text" placeholder="BUSCAR">
+								</form>
+							</div>
+							<a class="nav-link" href="#">CONTÁCTANOS</a>
+							<a class="nav-link" href="#">MEDIA KIT</a>
+							<a class="nav-link" href="#">LOGIN</a>
+						</nav>
+						<div class="dias col-md-12 col-lg-4">
+							<p>Martes 13 de Febrero, 2020<span class="horas">9:05 AM Centro</span></p>
+						</div>
+						<div class="col-md-12 col-lg-3 redes">
+							<div>
+								<img src="../assets/images/header/face.png">
+								<img src="../assets/images/header/twi.png">
+								<img src="../assets/images/header/you.png">
+								<img src="../assets/images/header/insta.png">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<nav class="navbar navbar-expand-md ">
+							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+								<div class="navbar-nav">
+									<a class="nav-item nav-link menu-principal"
+										href="/views/programas-destacados.html">PROGRAMAS</a>
+									<a class="nav-item nav-link menu-principal"
+										style="background-color: #49068F; color: #ffffff;"
+										href="/views/programacion.html">PROGRAMACIÓN</a>
+									<a class="nav-item nav-link menu-principal"
+										href="/views/informacion.html">INFORMACIÓN</a>
+									<a class="nav-item nav-link menu-principal"
+										href="/views/inmigracion.html">INMIGRACIÓN</a>
+									<a class="nav-item nav-link menu-principal" href="/views/fotos.html">FOTOS</a>
+									<a class="nav-item nav-link menu-principal" href="/views/cocina.html">COCINA</a>
+									<a class="nav-item nav-link menu-principal" href="/views/video.html">VIDEO</a>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <div class="container-secciones">
-      <seccion class="nav-busqueda-programacion">
-        <div class="row zona-programacion-nav">
-          <a class="nav-zona zona-activa"><p>ESTE</p></a>
-          <a class="nav-zona "><P>CENTRO</P></a>
-          <a class="nav-zona "><P>PACÍFICO</P></a>
-          <a class="nav-avanzada"><i class="fa fa-search" aria-hidden="true"></i><p>BUSQUEDA AVANZADA</p></a>
-          <a class="nav-dia"><p>Lunes <br> <span>13 MAYO</span></p></a>
-          <a class="nav-dia"><p>Martes <br> <span>13 MAYO</span></p></a>
-          <a class="nav-dia"><p>Miercoles <br> <span>13 MAYO</span></p></a>
-          <a class="nav-dia"><p>Jueves <br> <span>13 MAYO</span></p></a>
-          <a class="nav-dia"><p>Viernes <br> <span>13 MAYO</span></p></a>
-          <a class="nav-dia"><p>Sabado <br> <span>13 MAYO</span></p></a>
-          <a class="nav-dia"><p>Domingo <br> <span>13 MAYO</span></p></a>
-          <a class="nav-semanal"><i class="fa fa-angle-left" aria-hidden="true"></i><p>CALENDARIO SEMANAL</p><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          <a class="nav-mensual"><p>CALENDARIO MENSUAL</p></a>
-        </div>
-      </seccion>
-      <seccion class="busqueda-avanzada">
-        <div class="row">
-          <div class="col-6 col-lg-2 input-busqueda-avanzada">
-            <div style="margin: auto;">
-              <h4>Categoria</h4>
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <input type="text" name="" id="">
-            </div>
-          </div>
-          <div class="col-6 col-lg-2 input-busqueda-avanzada">
-            <div style="margin: auto;">
-              <h4>Rango de Horario</h4>
-              <div>
-                <select class="custom-select">
-                  <option selected>Elige un Horario</option>
-                  <option value="1">Mañana</option>
-                  <option value="2">Tarde</option>
-                  <option value="3">Noche</option>
-                </select>
-                <!-- <i class="fa fa-search" aria-hidden="true"></i>
-                <label for="">De</label>
-                <input type="time" name="" id="">
-                <br/>
-                <label for="">a</label>
-                <input type="time" name="" id=""> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-5 programacion-publicidad">
-            <img src="../assets/images/seccion-programas-destacados/Publi_Prog_Destacados.png" alt="">
-          </div>
-          <!-- calendario -->
-          <div class="col-12 col-lg-3 p-0 m-0">
-            <div class="month">
-              <ul>
-                <li class="prev">&#10094;</li>
-                <li class="next">&#10095;</li>
-                <li>
-                  Marzo<br>
-                  <span style="font-size:18px">2020</span>
-                </li>
-              </ul>
-            </div>
-            
-            <ul class="weekdays">
-              <li>Mo</li>
-              <li>Tu</li>
-              <li>We</li>
-              <li>Th</li>
-              <li>Fr</li>
-              <li>Sa</li>
-              <li>Su</li>
-            </ul>
-            
-            <ul class="days">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-              <li>7</li>
-              <li>8</li>
-              <li>9</li>
-              <li><span class="active">10</span></li>
-              <li>11</li>
-              <li>12</li>
-              <li>13</li>
-              <li>14</li>
-              <li>15</li>
-              <li>16</li>
-              <li>17</li>
-              <li>18</li>
-              <li>19</li>
-              <li>20</li>
-              <li>21</li>
-              <li>22</li>
-              <li>23</li>
-              <li>24</li>
-              <li>25</li>
-              <li>26</li>
-              <li>27</li>
-              <li>28</li>
-              <li>29</li>
-              <li>30</li>
-              <li>31</li>
-            </ul>
-          </div>
-        </div>
-        <!-- seccion programa uno -->
-        <div class="row seccion-botones-programa">
-          <div class="col-6 col-lg-2 p-0 m-0" style="display: flex;">
-            <h3 style="margin: auto;">
-              5:00 AM7              
-            </h3>
-          </div>
-          <div class="col-6 col-lg-2 p-0 m-0 programacion-imagen">
-            <img src="../assets/images/seccion-programacion/programa.png" alt="">
-          </div>
-          <div class="col-12 col-lg-5 p-10 m-0">
-            <h3>VITRAL</h3>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque impedit veritatis minima rem a molestiae porro quas, aperiam placeat eos temporibus culpa sequi blanditiis ad quae minus asperiores adipisci.</P>
-          </div>
-          <div class="col-12 col-lg-3 p-0 m-0" style="display:flex;">
-            <div style="margin: auto; width: 80%;">
-              <div class="row" style="margin: 1rem 0 0 0;justify-content: center;">
-                <button class="btn boton-programa" style="background:#27AAE2;">Revista Informativa</button>
-                <button class="btn boton-programa" style="background:#424244;">AG</button>
-              </div>
-              <div class="row">
-                <div class="col-12" >
-                  <div class="progress" style="margin: 1rem 0 0 0;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%; background:#27AAE2;" aria-valuenow="25" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- seccion programa dos -->
-        <div class="row seccion-botones-programa">
-          <div class="col-6 col-lg-2 p-0 m-0" style="display: flex;">
-            <h3 style="margin: auto;">
-              5:00 AM7
-            </h3>
-          </div>
-          <div class="col-6 col-lg-2 p-0 m-0 programacion-imagen">
-            <img src="../assets/images/seccion-programacion/programa.png" alt="">
-          </div>
-          <div class="col-12 col-lg-5 p-10 m-0">
-            <h3>VITRAL</h3>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque impedit veritatis minima rem a molestiae
-              porro quas, aperiam placeat eos temporibus culpa sequi blanditiis ad quae minus asperiores adipisci.</P>
-          </div>
-          <div class="col-12 col-lg-3 p-0 m-0" style="display:flex;">
-            <div style="margin: auto; width: 80%;">
-              <div class="row" style="margin: 1rem 0 0 0;justify-content: center;">
-                <button class="btn boton-programa" style="background:#F36523; ">Revista Informativa</button>
-                <button class="btn boton-programa" style="background:#424244; ">AG</button>
-              </div>
-              <div class="row">
-                <div class="col-12" >
-                  <div class="progress" style="margin: 1rem 0 0 0;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%; height:1rem; background:#F36523;" aria-valuenow="25"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </seccion>
-    </div>
-  </div>
+		<div class="container-secciones">
+			<seccion class="nav-busqueda-programacion">
+				<div class="row zona-programacion-nav">
+					<a id="este" class="nav-zona zona-activa-este">ESTE</a>
+					<a id="centro" class="nav-zona ">CENTRO</a>
+					<a id="pacifico" class="nav-zona ">PACÍFICO</a>
+					<a id="busqueda-show" class="nav-avanzada"><i class="fa fa-search" aria-hidden="true"></i>
+						<p>BUSQUEDA AVANZADA</p>
+					</a>
+					<a class="nav-dia">
+						<p>Lunes <br> <span>13 MAYO</span></p>
+					</a>
+					<a class="nav-dia">
+						<p>Martes <br> <span>13 MAYO</span></p>
+					</a>
+					<a class="nav-dia">
+						<p>Miercoles <br> <span>13 MAYO</span></p>
+					</a>
+					<a class="nav-dia">
+						<p>Jueves <br> <span>13 MAYO</span></p>
+					</a>
+					<a class="nav-dia">
+						<p>Viernes <br> <span>13 MAYO</span></p>
+					</a>
+					<a class="nav-dia">
+						<p>Sabado <br> <span>13 MAYO</span></p>
+					</a>
+					<a class="nav-dia">
+						<p>Domingo <br> <span>13 MAYO</span></p>
+					</a>
+					<a class="nav-semanal"><i class="fa fa-angle-left" aria-hidden="true"></i>
+						<p>CALENDARIO SEMANAL</p><i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
+					<a id="clandario-show" class="nav-mensual">
+						<p>CALENDARIO MENSUAL</p>
+					</a>
+				</div>
+			</seccion>
+			<seccion class="busqueda-avanzada">
+				<div class="row" style="justify-content:space-evenly;">
+					<!-- seccion busqueda avanzada -->
+					<div id="busqueda" class="col-9">
+						<div style="display: flex;">
+							<div class="col-6 col-lg-3 input-busqueda-avanzada">
+								<div style="margin: auto;">
+									<h4>Categoria</h4>
+									<i class="fa fa-search" aria-hidden="true"></i>
+									<input type="text" name="" id="">
+								</div>
+							</div>
+							<div class="col-6 col-lg-3 input-busqueda-avanzada">
+								<div style="margin: auto;">
+									<h4>Rango de Horario</h4>
+									<div>
+										<select class="custom-select">
+											<option selected>Elige un Horario</option>
+											<option value="1">Mañana</option>
+											<option value="2">Tarde</option>
+											<option value="3">Noche</option>
+										</select>
+										
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-12 col-lg-6 programacion-publicidad">
+								<img src="../assets/images/seccion-programas-destacados/Publi_Prog_Destacados.png" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- calendario -->
+					<div id="calendario" class="col-12 col-lg-3 p-0 m-0" >
+						<div class="month">
+							<ul>
+								<li class="prev">&#10094;</li>
+								<li class="next">&#10095;</li>
+								<li>
+									Marzo<br>
+									<span style="font-size:18px">2020</span>
+								</li>
+							</ul>
+						</div>
 
-  <!-- footer -->
-  <footer class="row">
-    <div class="col-sm-12 col-md-3 logo logo-footer m-0 p-0">
-      <a href="/index.html">
-        <img src="../assets/images/footer/Logo_mexicanal.png" alt="Logo_mexicanal">
-      </a>
-    </div>
-    <div class="col-sm-12 col-md-9 m-0 p-0">
-      <div class="row">
-        <nav class="navbar navbar-expand-md nav-footer">
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <div class="menu-footer">
-                <a class="nav-item nav-link link-footer" href="/views/programas-destacados.html">PROGRAMAS </a>
-              </div>
-              <div class="menu-footer">
-                <a class="nav-item nav-link link-footer" href="/views/programacion.html">PROGRAMACIÓN</a>
-              </div>
-              <div class="menu-footer">
-                <a class="nav-item nav-link link-footer" href="/views/informacion.html">INFORMACIÓN</a>
-              </div>
-              <div class="menu-footer">
-                <a class="nav-item nav-link link-footer" href="/views/inmigracion.html">INMIGRACIÓN</a>
-              </div>
-              <div class="menu-footer">
-                <a class="nav-item nav-link link-footer" href="/views/fotos.html">FOTOS</a>
-              </div>
-              <div class="menu-footer">
-                <a class="nav-item nav-link link-footer" href="/views/cocina.html">COCINA</a>
-              </div>
-              <div class="menu-footer">
-                <a class="nav-item nav-link link-footer" href="/views/video.html">VIDEO</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 footer-contacto m-0 pt-0 pb-3">
-          <h4>CONTÁCTANOS</h4>
-          <p>¿Quiénes somos?</p>
-          <p>Acerca de MEXICANAL</p>
-          <p>Política de privacidad</p>
-          <p>Términos de Uso</p>
-          <p>Afiliadas</p>
-        </div>
-        <div class="col-sm-12 col-md-8 logos-footer m-0">
-          <div>
-            <a href="">
-              <img src="../assets/images/footer/Icon_facebook_foother.png" alt="logo red">
-            </a>
-            <a href="">
-              <img src="../assets/images/footer/Icon_twitter_foorher.png" alt="logo red">
-            </a>
-            <a href="">
-              <img src="../assets/images/footer/Icon_Youtobe_foorher.png" alt="logo red">
-            </a>
-            <a href="">
-              <img src="../assets/images/footer/Icon_instagram_foorher.png" alt="logo red">
-            </a>
-          </div>
-          <p>Copyright 2019 Mexicanal Producciones, S.A. de C.V.</p>
+						<ul class="weekdays">
+							<li>Mo</li>
+							<li>Tu</li>
+							<li>We</li>
+							<li>Th</li>
+							<li>Fr</li>
+							<li>Sa</li>
+							<li>Su</li>
+						</ul>
 
-        </div>
-      </div>
-    </div>
-  </footer>
+						<ul class="days">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li><span class="active">10</span></li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+							<li>15</li>
+							<li>16</li>
+							<li>17</li>
+							<li>18</li>
+							<li>19</li>
+							<li>20</li>
+							<li>21</li>
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li>25</li>
+							<li>26</li>
+							<li>27</li>
+							<li>28</li>
+							<li>29</li>
+							<li>30</li>
+							<li>31</li>
+						</ul>
+					</div>
+					
+				</div>
+				<!-- seccion programa uno -->
+				<div class="row seccion-botones-programa">
+					<div class="col-6 col-lg-2 p-0 m-0" style="display: flex;">
+						<h3 style="margin: auto;">
+							5:00 AM7
+						</h3>
+					</div>
+					<div class="col-6 col-lg-2 p-0 m-0 programacion-imagen">
+						<img src="../assets/images/seccion-programacion/programa.png" alt="">
+					</div>
+					<div class="col-12 col-lg-5 p-10 m-0">
+						<h3>VITRAL</h3>
+						<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque impedit veritatis minima
+							rem a molestiae porro quas, aperiam placeat eos temporibus culpa sequi blanditiis ad quae
+							minus asperiores adipisci.</P>
+					</div>
+					<div class="col-12 col-lg-3 p-0 m-0" style="display:flex;">
+						<div style="margin: auto; width: 80%;">
+							<div class="row" style="margin: 1rem 0 0 0;justify-content: center;">
+								<button class="btn boton-programa" style="background:#27AAE2;">Revista
+									Informativa</button>
+								<button class="btn boton-programa" style="background:#424244;">AG</button>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="progress" style="margin: 1rem 0 0 0;">
+										<div class="progress-bar" role="progressbar"
+											style="width: 25%; background:#27AAE2;" aria-valuenow="25" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- seccion programa dos -->
+				<div class="row seccion-botones-programa">
+					<div class="col-6 col-lg-2 p-0 m-0" style="display: flex;">
+						<h3 style="margin: auto;">
+							5:00 AM7
+						</h3>
+					</div>
+					<div class="col-6 col-lg-2 p-0 m-0 programacion-imagen">
+						<img src="../assets/images/seccion-programacion/programa.png" alt="">
+					</div>
+					<div class="col-12 col-lg-5 p-10 m-0">
+						<h3>VITRAL</h3>
+						<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque impedit veritatis minima
+							rem a molestiae
+							porro quas, aperiam placeat eos temporibus culpa sequi blanditiis ad quae minus asperiores
+							adipisci.</P>
+					</div>
+					<div class="col-12 col-lg-3 p-0 m-0" style="display:flex;">
+						<div style="margin: auto; width: 80%;">
+							<div class="row" style="margin: 1rem 0 0 0;justify-content: center;">
+								<button class="btn boton-programa" style="background:#F36523; ">Revista
+									Informativa</button>
+								<button class="btn boton-programa" style="background:#424244; ">AG</button>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="progress" style="margin: 1rem 0 0 0;">
+										<div class="progress-bar" role="progressbar"
+											style="width: 25%; height:1rem; background:#F36523;" aria-valuenow="25"
+											aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</seccion>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer class="row">
+		<div class="col-sm-12 col-md-3 logo logo-footer m-0 p-0">
+			<a href="/index.html">
+				<img src="../assets/images/footer/Logo_mexicanal.png" alt="Logo_mexicanal">
+			</a>
+		</div>
+		<div class="col-sm-12 col-md-9 m-0 p-0">
+			<div class="row">
+				<nav class="navbar navbar-expand-md nav-footer">
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<div class="menu-footer">
+								<a class="nav-item nav-link link-footer"
+									href="/views/programas-destacados.html">PROGRAMAS </a>
+							</div>
+							<div class="menu-footer">
+								<a class="nav-item nav-link link-footer"
+									href="/views/programacion.html">PROGRAMACIÓN</a>
+							</div>
+							<div class="menu-footer">
+								<a class="nav-item nav-link link-footer" href="/views/informacion.html">INFORMACIÓN</a>
+							</div>
+							<div class="menu-footer">
+								<a class="nav-item nav-link link-footer" href="/views/inmigracion.html">INMIGRACIÓN</a>
+							</div>
+							<div class="menu-footer">
+								<a class="nav-item nav-link link-footer" href="/views/fotos.html">FOTOS</a>
+							</div>
+							<div class="menu-footer">
+								<a class="nav-item nav-link link-footer" href="/views/cocina.html">COCINA</a>
+							</div>
+							<div class="menu-footer">
+								<a class="nav-item nav-link link-footer" href="/views/video.html">VIDEO</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4 footer-contacto m-0 pt-0 pb-3">
+					<h4>CONTÁCTANOS</h4>
+					<p>¿Quiénes somos?</p>
+					<p>Acerca de MEXICANAL</p>
+					<p>Política de privacidad</p>
+					<p>Términos de Uso</p>
+					<p>Afiliadas</p>
+				</div>
+				<div class="col-sm-12 col-md-8 logos-footer m-0">
+					<div>
+						<a href="">
+							<img src="../assets/images/footer/Icon_facebook_foother.png" alt="logo red">
+						</a>
+						<a href="">
+							<img src="../assets/images/footer/Icon_twitter_foorher.png" alt="logo red">
+						</a>
+						<a href="">
+							<img src="../assets/images/footer/Icon_Youtobe_foorher.png" alt="logo red">
+						</a>
+						<a href="">
+							<img src="../assets/images/footer/Icon_instagram_foorher.png" alt="logo red">
+						</a>
+					</div>
+					<p>Copyright 2019 Mexicanal Producciones, S.A. de C.V.</p>
+
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
 
-  <!-- js slider slick -->
-  <script src="../js/slick.min.js"></script>
+	<!-- js slider slick -->
+	<script src="../js/slick.min.js"></script>
 
-  <!-- js extra -->
-  <script src="../js/slider.js"></script>
-  <script src="../js/programacion.js"></script>
+	<!-- js extra -->
+	<script src="../js/slider.js"></script>
+	<script src="../js/programacion.js"></script>
+	<script src="../js/menu.js"></script>
 </body>
 
 </html>
