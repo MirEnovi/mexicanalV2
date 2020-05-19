@@ -1,0 +1,423 @@
+.mapa, .img-articulo-principal {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  width: 100%;
+  min-height: 400px;
+}
+.mapa {
+  display: block;
+}
+.barra-estado {
+  position: relative;
+  background-image: url('http://mexicanal2.pxlatelier.com/img/Inmigracion_mapas/Fondo-seleccionar-su-estado.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 6%;
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  display: flex;
+}
+.select-estados {
+  display: none;
+}
+
+.titulo-galeria-tus-fotos,
+.titulo-form-tus-fotos,
+.titulo-otras-recetas {
+  color: #ffffff;
+  font-size: calc(8px + 1vmin);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  height: 5.5rem;
+}
+
+.galeria-tus-fotos {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.galeria-otras-recetas {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.titulo-galeria-tus-fotos {
+  background-color: #B70577;
+}
+
+.titulo-form-tus-fotos {
+  background-image: url('../assets/images/seccion-uno/Fondo_titulo_1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 101;
+  position: relative;
+}
+
+.titulo-otras-recetas {
+  background-color: #F15A24;
+}
+
+.container-articulo {
+  min-height: 15rem;
+  text-align: center;
+  margin: -2rem 0 0 0;
+  padding: 2rem 0 0 0;
+  height: auto;
+}
+.container-links-articulos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.link-articulo, .link-articulo-map {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.link-articulo-map {
+  width: 100%;
+  height: 5rem;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+.link-articulo-map a {
+  color: #0670BA;
+  margin: auto;
+}
+
+/* pagination */
+.btn-gris {
+  width: 2rem;
+  height: 2rem;
+  background: #333;
+  margin: 0 6px;
+  border-radius: 50px;
+  display: flex;
+}
+.btn-gris p {
+  color: white;
+  margin: auto;
+  padding: 0 0 4px 0;
+}
+.pagina-activa {
+  background: red;
+  color: #e0dddd;
+  border-radius: 15px;
+}
+.paginacion {
+  display: flex;
+}
+.paginacion li {
+  width: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.paginacion li>a {
+  margin: auto;
+}
+
+
+.container-articulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container-links-recetas {
+  min-height: 13rem;
+  height: 14rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #ff9336;
+  overflow-y: scroll;
+}
+
+.link-receta {
+  padding: .5rem;
+  width: 100%;
+  border: .5px solid #adadad;
+}
+
+.galeria-elemento img {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.galeria-img-descripcion {
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+  line-height: 1.2;
+}
+
+.ver-mas-fotos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+  color: #8D0D52;
+  font-weight: bold;
+}
+
+.container-articulo form {
+  display: grid;
+  width: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+
+.container-articulo label,
+.opcional {
+  color: #666666;
+}
+
+.container-articulo input,
+.container-articulo textarea {
+  border-radius: 5px;
+  border: 1px solid rgb(206, 205, 205);
+}
+
+.opcional {
+  text-align: end;
+  font-size: 10px;
+}
+
+.solo-archivos {
+  color: rgb(196, 195, 195);
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+
+.solo-archivos span {
+  font-weight: bold;
+  color: rgb(170, 170, 170);
+}
+
+.enviar-comentario {
+  border-radius: 8px;
+  background-color: #666666;
+  color: #ffffff;
+  width: fit-content;
+  padding: 0 1.5rem;
+}
+
+.publicidad-fotos,
+.publicidad-fotos-2 {
+  display: flex;
+  width: 100%;
+  padding: 3rem;
+}
+
+.publicidad-fotos img,
+.publicidad-fotos-2 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+}
+
+.publicidad-fotos-2 img {
+  padding: 1rem 2rem;
+}
+
+.publicidad-fotos img {
+  padding: 4rem 2rem 1rem;
+}
+
+.slider-img img {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.slider-img img:hover {
+  transform: scale3d(1.5, 1.5, 1.5);
+  z-index: 101 !important;
+}
+
+.barra-instagram-1 {
+  background-image: url('../assets/images/seccion-fotos/7.png');
+  background-size: 100% 100%;
+  background-position: unset;
+  background-repeat: no-repeat;
+}
+
+.barra-instagram-2 {
+  color: #8E8E8E;
+}
+
+.barra-instagram-1,
+.barra-instagram-2 {
+  background-color: #F2F2F2;
+  color: #ffffff;
+  font-size: calc(8px + 1vmin);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  height: 3.5rem;
+}
+
+.titulo-fotos-a {
+  color: #8C8C8C;
+  width: 100%;
+  text-align: inherit;
+  padding: 0 1rem;
+}
+
+.titulo-fotos-b {
+  color: #375890;
+  width: 100%;
+  text-align: inherit;
+  padding: 0 1rem;
+  font-size: calc(10px + 1vmin);
+  margin: 1rem 0;
+}
+
+.titulo-fotos-a p {
+  font-size: calc(8px + 1vmin);
+}
+
+.titulo-fotos-a p>span {
+  font-size: calc(9px + 1vmin);
+  color: #222121;
+}
+
+.album-element {
+  width: 100%;
+  height: auto;
+}
+
+.album-element img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.receta-seccion {
+  display: flex;
+}
+
+.receta-seccion h5 {
+  color: #F15A24;
+}
+
+.receta-seccion img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.texto-receta {
+  max-height: 8rem;
+  min-height: 8rem;
+  overflow: hidden;
+}
+
+/* pagina articulo */
+.container-articulo2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.articulo-titulo {
+  color: #0670BA;
+  text-align: left;
+  width: 70%;
+  margin: 10px 0;
+}
+.container-articulo2 p {
+  line-height: 1.4em;
+  text-align: justify;
+  margin: 5px 0;
+}
+.p-notas-migrante {
+  text-align: justify;
+  padding: 0 15px 0 0;
+  line-height: 18px;
+}
+.container-tus-fotos form{
+  display: grid;
+  width: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+.container-tus-fotos label {
+  color: #666666;
+}
+.container-tus-fotos input, .container-tus-fotos textarea {
+  border-radius: 5px;
+  border: 1px solid rgb(206, 205, 205);
+}
+.titulo-comentarios {
+  margin: auto 0 auto 4rem;
+}
+.video-inmigracion iframe {
+  margin: 3rem auto;
+}
+/* small screens ----------- */
+@media only screen and (max-width : 670px) {
+  .mapa {
+    display: none;
+  }
+  .select-estados {
+    display: flex;
+    justify-content: center;
+  }
+  .select-estados select {
+    width: 60%;
+    height: 2rem;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+  }
+  .select-estados option {
+    color: #444343;
+  }
+  .section-noticias-informacion {
+    height: fit-content;
+  }
+  .publicidad-fotos-2 {
+    padding: 2rem 0;
+  }
+  .publicidad-fotos-2 img {
+    padding: 1rem;
+  }
+
+  .publicidad-fotos img {
+    max-height: 450px;
+    padding: 1rem 0;
+  }
+
+  .margen-receta {
+    margin: 0;
+  }
+
+  .texto-receta {
+    text-align: center;
+  }
+  .barra-estado {
+    background-size: 100% 100%;
+    height: 5rem;
+  }
+  .titulo-comentarios {
+    margin: auto 0 auto 1rem;
+  }
+}

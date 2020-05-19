@@ -23,7 +23,285 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/inmigracion.css">
+  <style>
+    .encabezado-cocina {
+      width: 100%;
+      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: fit-content;
+      width: 100%;
+      min-height: 400px;
+    }
+
+    .titulo-galeria-tus-fotos,
+    .titulo-form-tus-fotos,
+    .titulo-otras-recetas {
+      color: #ffffff;
+      font-size: calc(8px + 1vmin);
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      height: 4.5rem;
+    }
+
+    .galeria-tus-fotos {
+      width: 100%;
+      background-color: #F2F2F2;
+    }
+
+    .galeria-otras-recetas {
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    .titulo-galeria-tus-fotos {
+      background-color: #B70577;
+    }
+
+    .titulo-form-tus-fotos {
+      background-image: url('../assets/images/seccion-uno/Fondo_titulo_1.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 101;
+      position: relative;
+    }
+
+    .titulo-otras-recetas {
+      background-color: #F15A24;
+    }
+
+    .container-articulo {
+      min-height: 13rem;
+      height: fit-content;
+      text-align: center;
+      margin: -2rem 0 0 0;
+      padding: 2rem 0 0 0;
+    }
+
+    .container-links-recetas {
+      min-height: 13rem;
+      height: 14rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      color: #ff9336;
+      overflow-y: scroll;
+    }
+
+    .link-receta {
+      padding: .5rem;
+      width: 100%;
+      border: .5px solid #adadad;
+    }
+
+    .galeria-elemento img {
+      width: 100%;
+      padding: 5px 0;
+    }
+
+    .galeria-img-descripcion {
+      display: flex;
+      justify-content: flex-end;
+      text-align: end;
+      line-height: 1.2;
+    }
+
+    .ver-mas-fotos {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 10px;
+      color: #8D0D52;
+      font-weight: bold;
+    }
+
+    .container-articulo form {
+      display: grid;
+      width: 100%;
+      padding: 2rem;
+      text-align: left;
+    }
+
+    .container-articulo label,
+    .opcional {
+      color: #ff9336;
+    }
+
+    .container-articulo input,
+    .container-articulo textarea {
+      border-radius: 5px;
+      border: 1px solid rgb(206, 205, 205);
+    }
+
+    .opcional {
+      text-align: end;
+      font-size: 10px;
+    }
+
+    .solo-archivos {
+      color: rgb(196, 195, 195);
+      font-size: 12px;
+      line-height: 1.2;
+      margin: 0 0 10px 0;
+    }
+
+    .solo-archivos span {
+      font-weight: bold;
+      color: rgb(170, 170, 170);
+    }
+
+    .enviar-foto {
+      border-radius: 8px;
+      background-color: #ff9336;
+      color: #ffffff;
+      width: fit-content;
+      padding: 0 1.5rem;
+    }
+
+    .publicidad-fotos,
+    .publicidad-fotos-2 {
+      display: flex;
+      width: 100%;
+      padding: 3rem;
+    }
+
+    .publicidad-fotos img,
+    .publicidad-fotos-2 img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin: auto;
+    }
+
+    .publicidad-fotos-2 img {
+      padding: 1rem 2rem;
+    }
+
+    .publicidad-fotos img {
+      padding: 4rem 2rem 1rem;
+    }
+
+    .slider-img img {
+      margin-top: 4rem;
+      position: relative;
+    }
+
+    .slider-img img:hover {
+      transform: scale3d(1.5, 1.5, 1.5);
+      z-index: 101 !important;
+    }
+
+    .barra-instagram-1 {
+      background-image: url('../assets/images/seccion-fotos/7.png');
+      background-size: 100% 100%;
+      background-position: unset;
+      background-repeat: no-repeat;
+    }
+
+    .barra-instagram-2 {
+      color: #8E8E8E;
+    }
+
+    .barra-instagram-1,
+    .barra-instagram-2 {
+      background-color: #F2F2F2;
+      color: #ffffff;
+      font-size: calc(8px + 1vmin);
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      height: 3.5rem;
+    }
+
+    .titulo-fotos-a {
+      color: #8C8C8C;
+      width: 100%;
+      text-align: inherit;
+      padding: 0 1rem;
+    }
+
+    .titulo-fotos-b {
+      color: #375890;
+      width: 100%;
+      text-align: inherit;
+      padding: 0 1rem;
+      font-size: calc(10px + 1vmin);
+      margin: 1rem 0;
+    }
+
+    .titulo-fotos-a p {
+      font-size: calc(8px + 1vmin);
+    }
+
+    .titulo-fotos-a p>span {
+      font-size: calc(9px + 1vmin);
+      color: #222121;
+    }
+
+    .album-element {
+      width: 100%;
+      height: auto;
+    }
+
+    .album-element img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .receta-seccion {
+      display: flex;
+    }
+
+    .receta-seccion h5 {
+      color: #F15A24;
+    }
+
+    .receta-seccion img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .texto-receta {
+      max-height: 8rem;
+      min-height: 8rem;
+      overflow: hidden;
+    }
+
+    .margen-receta {
+      margin: auto;
+    }
+
+    /* small screens ----------- */
+    @media only screen and (max-width : 670px) {
+      .publicidad-fotos-2 img {
+        padding: 1rem;
+      }
+
+      .publicidad-fotos img {
+        max-height: 450px;
+        padding: 1rem 0;
+      }
+
+      .margen-receta {
+        margin: 0;
+      }
+
+      .texto-receta {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -177,36 +455,9 @@
 
               <!-- seccion central -->
               <div class="section-noticias-informacion col-12 col-lg-8 m-0 p-0">
-
-                <!-- AQUÍ VA EL MAPA -->
-                <div class="mapa"
+                <!-- mapa -->
+                <div class="encabezado-cocina"
                   style="background-image: url('../assets/images/cocina/pollo-glaseado-al-limon.jpg');"></div>
-                <!-- FIN SECCION MAPA -->
-
-                <div class="barra-estado">
-                  <div style="width: 35%;  text-align: center; margin: auto;">
-                    <p style="color: white;">SELECCIONE SU ESTADO:</p>
-                  </div>
-                  <div style="width: 65%; text-align: center; margin: auto;">
-                    <p id="name_estado" style="color: #444343;">TEXAS</p>
-                    <div class="select-estados">
-                      <select >
-                        <option value="1">TEXAS</option>
-                        <option value="2">TEXAS</option>
-                        <option value="3">TEXAS</option>
-                        <option value="4">TEXAS</option>
-                        <option value="5">TEXAS</option>
-                        <option value="6">TEXAS</option>
-                        <option value="7">TEXAS</option>
-                        <option value="8">TEXAS</option>
-                        <option value="9">TEXAS</option>
-                        <option value="10">TEXAS</option>
-                        <option value="11">TEXAS</option>
-                        <option value="12">TEXAS</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
 
                 <!-- publicidad  -->
                 <div class="row">
@@ -216,73 +467,25 @@
                 </div>
                 <!-- fin de publicidad  -->
 
-                <!-- link a notas -->
-                <div class="row">
-                  <div class="col-12 ">
-                    <div class="container-links-articulos">
-                      <div class="link-articulo-map">
-                        <a>Sobrevivieron al ‘tráiler de la muerte’ de Texas: ahora el coronavirus los lleva al límite -
-                          infobae</a>
-                      </div>
-                      <div class="link-articulo-map">
-                        <a>Sobrevivieron al ‘tráiler de la muerte’ de Texas: ahora el coronavirus los lleva al límite -
-                          infobae</a>
-                      </div>
-                      <div class="link-articulo-map">
-                        <a>Sobrevivieron al ‘tráiler de la muerte’ de Texas: ahora el coronavirus los lleva al límite -
-                          infobae</a>
-                      </div>
-                      <div class="link-articulo-map">
-                        <a>Sobrevivieron al ‘tráiler de la muerte’ de Texas: ahora el coronavirus los lleva al límite -
-                          infobae</a>
-                      </div>
-                      <div class="link-articulo-map">
-                        <a>Sobrevivieron al ‘tráiler de la muerte’ de Texas: ahora el coronavirus los lleva al límite -
-                          infobae</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="nav justify-content-center" style="padding: 1rem;">
-                      <div class="btn-gris"> <p>&lt;&lt;</p> </div>
-                      <div class="btn-gris"> <p>&lt;</p> </div>
-                      <ul class="paginacion">
-                        <li class="pagina-activa"><a class="page">1</a></li>
-                        <li><a class="page">2</a></li>
-                        <li><a class="page" >3</a></li>
-                        <li class="disabled"><a class="page" >...</a>
-                        </li>
-                      </ul>
-                      <div class="btn-gris"> <p>&gt;</p> </div>
-                      <div class="btn-gris"> <p>&gt;&gt;</p> </div>
-                    </div>
-                  </div>
-
-                </div>
-                <!-- fin link a notas -->
-
               </div>
               <!-- fin seccion central -->
 
               <!-- seccion derecha -->
               <div class="col-12 col-lg-4 m-0 p-0">
 
-                <!-- contenedor artiuculos -->
+                <!-- contenendor artiuculos -->
                 <div class="row">
                   <div class="galeria-tus-fotos">
                     <div class=" titulo-form-tus-fotos">
-                      <h4 class="m-auto p-0">ARTÍCULOS DE INMIGRACIÓN</h4>
+                      <p class="m-auto p-0">TITULO</p>
                     </div>
                     <!-- un articulo -->
                     <div class="row container-articulo" style="background-color: #ffffff;">
                       <div class="col-12" style="display: flex;">
                         <div style="margin:auto">
-                          <h5 style="color: #679DC4">Recomendaciones en caso de detención de Inmigración</h5>
-                          <p style="text-align: justify;">Washington (Notimex).- La primer iniciativa de ley para una
-                            reforma migratoria en Estados Unidos seŕa anunciada...</p>
-                          <a href="/views/inmigracion-articulo.html" class="link-articulo">
-                            <p style="color: #666666;">[Leer más]</p>
+                          <p>Sigue las recetas de esta famosa repostera neoleonense</p>
+                          <a href="/views/cocina-receta.html">
+                            <p style="color: #FF9336;">[Ver recetas]</p>
                           </a>
                         </div>
                       </div>
@@ -292,39 +495,9 @@
                     <div class="row container-articulo">
                       <div class="col-12" style="display: flex;">
                         <div style="margin:auto">
-                          <h5 style="color: #679DC4">Recomendaciones en caso de detención de Inmigración</h5>
-                          <p style="text-align: justify;">Washington (Notimex).- La primer iniciativa de ley para una
-                            reforma migratoria en Estados Unidos seŕa anunciada...</p>
-                          <a href="/views/inmigracion-articulo.html" class="link-articulo">
-                            <p style="color: #666666;">[Leer más]</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- un articulo -->
-                    <div class="row container-articulo" style="background-color: #ffffff;">
-                      <div class="col-12" style="display: flex;">
-                        <div style="margin:auto">
-                          <h5 style="color: #679DC4">Recomendaciones en caso de detención de Inmigración</h5>
-                          <p style="text-align: justify;">Washington (Notimex).- La primer iniciativa de ley para una
-                            reforma migratoria en Estados Unidos seŕa anunciada...</p>
-                          <a href="/views/inmigracion-articulo.html" class="link-articulo">
-                            <p style="color: #666666;">[Leer más]</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!--un articulo -->
-                    <div class="row container-articulo">
-                      <div class="col-12" style="display: flex;">
-                        <div style="margin:auto">
-                          <h5 style="color: #679DC4">Recomendaciones en caso de detención de Inmigración</h5>
-                          <p style="text-align: justify;">Washington (Notimex).- La primer iniciativa de ley para una
-                            reforma migratoria en Estados Unidos seŕa anunciada...</p>
-                          <a href="/views/inmigracion-articulo.html" class="link-articulo">
-                            <p style="color: #666666;">[Leer más]</p>
+                          <p>Sigue las recetas de esta famosa repostera neoleonense</p>
+                          <a href="/views/cocina-receta.html">
+                            <p style="color: #FF9336;">[Ver recetas]</p>
                           </a>
                         </div>
                       </div>
@@ -332,28 +505,91 @@
 
                   </div>
                 </div>
-                <!-- fin contenedor articulos -->
-
-                <!-- notas al migrante -->
                 <div class="row">
-									<div class="galeria-tus-fotos">
-										<div class=" titulo-form-tus-fotos">
-											<h4 class="m-auto p-0">NOTAS AL MIGRANTE</h4>
-										</div>
-										<div class="row container-articulo">
-											<div class="col-6">
-												<img src="../assets/images/seccion-inmigracion/1.jpg" alt="">
-											</div>
-											<div class="col-6 p-0" style="display: flex;">
-												<div style="margin:auto">
-													<p class="p-notas-migrante">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores deserunt delectus perferendis impedit obcaecati corrupti. Dolor, perferendis.</p>
-													
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-                <!-- fin notas al migrante  -->
+                  <div class="galeria-tus-fotos">
+                    <div class=" titulo-form-tus-fotos">
+                      <p class="m-auto p-0">TITULO</p>
+                    </div>
+                    <div class="row container-articulo">
+                      <div class="col-6">
+                        <img src="../assets/images/cocina/chef_pepe.png" alt="">
+                      </div>
+                      <div class="col-6" style="display: flex;">
+                        <div style="margin:auto">
+                          <p>Sigue las recetas de esta famosa repostera neoleonense</p>
+                          <a href="/views/cocina-receta.html">
+                            <p style="color: #FF9336;">[Ver recetas]</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="galeria-otras-recetas">
+                    <div class=" titulo-otras-recetas">
+                      <p class="m-auto p-0">LINKS</p>
+                    </div>
+                    <div class="row container-links-recetas">
+                      <div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña</a>
+                        </div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña 2</a>
+                        </div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña 3</a>
+                        </div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña 4</a>
+                        </div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña 5</a>
+                        </div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña 6</a>
+                        </div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña 7</a>
+                        </div>
+                        <div class="link-receta">
+                          <a>Gelatina de Antaño de Piña 8</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="galeria-tus-fotos">
+                    <div class=" titulo-form-tus-fotos">
+                      <p class="m-auto p-0">FORMULARIO</p>
+                    </div>
+                    <div class="row container-articulo">
+                      <p>¿En todos lados te chulean tus platillos? Comparte tus secretos y tu sazón con nosotros.</p>
+                      <form>
+                        <label>Nombre *</label>
+                        <input type="text" name="" id="">
+                        <label>Nombre del platillo *</label>
+                        <input type="text" name="" id="">
+                        <label>Ingredientes y preparación *</label>
+                        <Textarea></Textarea>
+                        <p class="opcional">* Campos Opcionales</p>
+                        <!-- <label>Selecciona una foto</label>
+                        <input type="file" class="custom-file-input" name="" id=""> -->
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label" for="inputGroupFile01">Selecciona una foto</label>
+                        </div>
+                        <p class="solo-archivos">Solamente archivos <span>JPG PNG o GIF</span>, peso máximo de
+                          <span>1Mb</span>.</p>
+                        <button class="enviar-foto">Enviar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </section>
