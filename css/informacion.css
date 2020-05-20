@@ -88,7 +88,7 @@
   position: inherit;
   max-width: 100%;
   /* height: 300px; */
-  min-height: 413px;
+  min-height: 436px;
   padding: 7rem 10px 0;
   color: #ffffff;
   line-height: 1.4;
@@ -323,7 +323,7 @@
 /* Tabs ----------- */
 @media only screen and (min-width : 1024px) and (max-width : 1365px) {
   .noticias-informacion-tarjeta {
-    margin: -165px 0 0 0;
+    margin: -238px 0 0 0;
     min-height: 469px;
   }
   .receta-resumen-tarjeta {
@@ -341,13 +341,13 @@
 
 @media only screen and (min-width : 1280px) and (max-width : 1365px) {
   .noticias-informacion-tarjeta {
-    min-height: 419px;
+    min-height: 462px;
   }
 }
 
 @media only screen and (min-width : 1366px) and (max-width : 1439px) {
   .noticias-informacion-tarjeta {
-    min-height: 412px;
+    min-height: 415px;
     margin: -165px 0 0 0;
   }
   .container-noticias {
@@ -383,17 +383,33 @@
     height: 285px;
   }
   .noticias-informacion-tarjeta {
-    min-height: 422px;
+    min-height: 421px;
   }
   .receta-resumen-tarjeta {
     margin: 0 0 0 -22px;
   }
 }
-@media only screen and (min-width: 2550px) {
+@media only screen and (min-width : 1920px) {
+  .noticias-informacion-tarjeta {
+    min-height: 434px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
   .boton-comentarios {
     margin: -27rem 0 0 0;
   }
   .noticias-informacion-tarjeta {
-    height: 400px;
+    min-height: 400px;
+  }
+}
+
+@media only screen and (min-width : 2880px) {
+  .noticias-informacion-tarjeta {
+    font-size: 1.2rem;
+    min-height: 354px;
+  }
+  .receta-resumen-tarjeta {
+    font-size: 1.3rem;
   }
 }

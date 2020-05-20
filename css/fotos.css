@@ -94,13 +94,12 @@
 .slider-img img {
   margin-top: 4rem;
   position: relative;
+  padding: 1rem;
 }
 .slider-img img:hover {
-  transform: scale3d(1.5, 1.5, 1.5);
-  z-index: 101 !important;
+  padding: 0;
 }
 .barra-instagram-1 {
-  background-image: url('../assets/images/seccion-fotos/7.png');
   background-size: 100% 100%;
   background-position: unset;
   background-repeat: no-repeat;
@@ -134,15 +133,43 @@
   font-size: calc(10px + 1vmin);
   margin: 1rem 0;
 }
-.titulo-fotos-a p {
-  font-size: calc(8px + 1vmin);
+.titulo-fotos-a p, .elements-barra p {
+  font-size: calc(9px + 1vmin);
 }
+.titulo-fotos-a p {
+  color: #888888;
+}
+.elements-barra p {
+  color: #ffffff;
+}
+.elements-barra1, .elements-barra2 {
+  display: flex;
+  margin: auto;
+}
+.elements-barra1 {
+  width: 55%;
+  justify-content: space-evenly;
+}
+.elements-barra2 {
+  width: 40%;
+}
+.elements-barra1 p {
+  font-size: .7rem;
+  line-height: 25px;
 
-.titulo-fotos-a p>span {
+}
+.elements-barra2 p {
+  color: #686868;
+  font-size: .55rem;
+}
+.titulo-fotos-a p>span, .elements-barra2 p>span {
   font-size: calc(9px + 1vmin);
   color: #222121;
 }
-
+.elements-barra1 img, .elements-barra2 img {
+  max-height: 2rem;
+  max-width: 2rem;
+}
 .album-element {
   width: 100%;
   height: auto;
@@ -155,11 +182,26 @@
 
 /* small screens ----------- */
 @media only screen and (max-width : 670px) {
+  .titulo-fotos-a p {
+    font-size: calc(15px + 1vmin);
+  }
+  .titulo-fotos-a p>span {
+    font-size: calc(16px + 1vmin);
+  }
   .publicidad-fotos-2 img {
-    padding: 10px;
-}
+    padding: 5px;
+  }
   .publicidad-fotos img {
     max-height: 450px;
-    padding: 1rem 0;
+    padding: 1rem 0 !important;
+  }
+  .barra-instagram-1, .barra-instagram-2 {
+    height: 5.5rem;
+  }
+  .elements-barra1, .elements-barra2 {
+    flex-direction: column;
+  }
+  .elements-barra1 img, .elements-barra2 img {
+    margin: auto;
   }
 }
