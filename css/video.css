@@ -43,6 +43,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .elemento-galeria-video img {
@@ -51,11 +52,75 @@
   height: auto;
   padding: 5px;
 }
-
+.elemento-galeria-video iframe {
+  width: 14rem;
+}
 .carousel-caption {
-
   padding: 0;
   height: 2rem;
+}
+
+.barra-instagram-1, .barra-instagram-2 {
+  background-color: #F2F2F2;
+  color: #ffffff;
+  font-size: calc(8px + 1vmin);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  height: 3.5rem;
+}
+.barra-instagram-1 {
+  background-size: 100% 100%;
+  background-position: unset;
+  background-repeat: no-repeat;
+}
+.elements-barra1, .elements-barra2 {
+  display: flex;
+  margin: auto;
+}
+.elements-barra1 img, .elements-barra2 img {
+  max-height: 2rem;
+  max-width: 2rem;
+}
+.elements-barra1 {
+  width: 50%;
+  justify-content: space-evenly;
+}
+.elements-barra1 p {
+  font-size: .7rem;
+  line-height: 25px;
+  font-weight: 200 !important;
+}
+.elements-barra2 {
+  width: 40%;
+  justify-content: flex-end;
+}
+.elements-barra2 p {
+  color: #686868;
+  font-size: .55rem;
+}
+.link-articulo, .link-articulo-map {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+}
+
+/* small screens ----------- */
+@media only screen and (max-width : 670px) {
+  
+  .barra-instagram-1, .barra-instagram-2 {
+    height: 5.5rem;
+  }
+  .elements-barra1, .elements-barra2 {
+    flex-direction: column;
+  }
+  .elements-barra1 img, .elements-barra2 img {
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width : 1680px) {
