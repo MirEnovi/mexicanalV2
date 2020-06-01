@@ -31,7 +31,8 @@
   margin: auto;
 }
 .texto-video {
-  background-color: rgba(14, 13, 13, 0.479);
+  padding: 1rem 7rem;
+  width: 100%;
 }
 
 .promos {
@@ -46,7 +47,7 @@
   flex-wrap: wrap;
 }
 
-.elemento-galeria-video img {
+.elemento-galeria-video {
   width: 100%;
   max-width: 200px;
   height: auto;
