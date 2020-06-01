@@ -71,7 +71,7 @@
   width: 100%;
   text-align: center;
   padding: 5px;
-  height: 3.5rem;
+  height: 4.5rem;
 }
 .barra-instagram-1 {
   background-size: 100% 100%;
@@ -91,7 +91,7 @@
   justify-content: space-evenly;
 }
 .elements-barra1 p {
-  font-size: .7rem;
+  font-size: .9rem;
   line-height: 25px;
   font-weight: 200 !important;
 }
@@ -101,7 +101,7 @@
 }
 .elements-barra2 p {
   color: #686868;
-  font-size: .55rem;
+  font-size: .9rem;
 }
 .link-articulo, .link-articulo-map {
   display: flex;
@@ -121,6 +121,9 @@
   }
   .elements-barra1 img, .elements-barra2 img {
     margin: auto;
+  }
+  .elements-barra1 p {
+    font-size: 0.7rem;
   }
 }
 
