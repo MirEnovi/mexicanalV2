@@ -15,6 +15,11 @@
 .titulo-programa-selec div {
   margin: auto;
 }
+.slider-programas {
+  z-index: 1;
+  position: relative;
+  margin: 0rem 0 0 0;
+}
 .slider-pd img {
   height: 17rem;
   object-fit: contain;
@@ -27,6 +32,7 @@
   width: 100% !important;
 }
 
+
 .titulo-programa-selec {
   background-image: url('../assets/images/seccion-programas-destacados/Fondo-titulo-11.png');
   background-size: 100%;
@@ -34,7 +40,7 @@
   min-height: 10rem;
   height: fit-content;
   width: auto;
-  margin: -2rem 30% 0;
+  margin: -2.8rem 30% 0;
   color: #ffffff;
   display: flex;
 }
@@ -143,6 +149,10 @@
   height: 470px;
 }
 
+.filter {
+  filter: grayscale(1);
+}
+
 /* small screens ----------- */
 @media only screen and (max-width : 670px) {
   
@@ -194,7 +204,37 @@
   .titulo-pd {
     margin: 0 0 -3rem 0;
   }
-  .titulo-programa-selec {
+  /* .titulo-programa-selec {
     margin: -4.5rem 30% 0;
+  } */
+}
+
+/* querys para flecha slider ----------- */
+@media only screen and (min-width : 1401px) {
+  .slider-programas {
+    margin: -2rem 0 0 0;
+  }
+}
+@media only screen and (min-width : 1630px) {
+  .titulo-programa-selec {
+    margin: -3.1rem 30% 0;
+  }
+}
+
+@media only screen and (min-width : 1650px) {
+  .titulo-programa-selec {
+    margin: -3.7rem 30% 0;
+  }
+  .slider-programas {
+    margin: -3rem 0 0 0;
+  }
+}
+
+@media only screen and (min-width : 1730px) {
+  .titulo-programa-selec {
+    margin: -3.3rem 30% 0;
+  }
+  .slider-pd img {
+    height: 18rem;
   }
 }
