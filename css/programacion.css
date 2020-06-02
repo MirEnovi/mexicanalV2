@@ -5,7 +5,7 @@
 .zona-programacion-nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	height: 100%;
 	width: 100vw;
@@ -13,7 +13,7 @@
 }
 
 .zona-programacion-nav a {
-	width: calc(99.8vw/13);
+	width: calc(100vw/13);
 	text-align: center;
 	padding: 1rem .5rem;
 	min-height: 4rem;
@@ -21,17 +21,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: .85rem;
 }
 
 .nav-avanzada i,
 .nav-semanal i {
 	font-size: calc(20px + 1vmin);
-	padding: 0 .5rem;
+	padding: 0 .3rem;
 }
 
 .nav-avanzada p,
 .nav-semanal p {
-	font-size: calc(1.5px + 1vmin);
+	font-size: .55rem;
 }
 
 .nav-zona {
@@ -48,6 +49,12 @@
 	height: 4.9rem !important;
 	z-index: 101;
 	color: #fff !important;
+	
+}
+.nav-zona.zona-activa-este, .nav-zona.zona-activa-pacifico, .nav-zona.zona-activa-centro {
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px -3px 5px -2px rgba(0,0,0,0.75);
+	box-shadow: -1px -3px 5px -2px rgba(0,0,0,0.75);
 }
 .zona-activa-este {
 	background-image: url('../assets/images/seccion-programacion/Fondo-Este.png');
@@ -69,19 +76,20 @@
 .nav-dia {
 	background-color: #3E04B0;
 	color: #735DB6;
+	font-size: .7rem;
 }
 
 .nav-mensual {
 	/* background-color: #4D4D4D; */
 	color: rgb(243, 242, 242) !important;
-	font-size: calc(4px + 1vmin);
+	font-size: .6rem !important;
 	background-image: url('../assets/images/seccion-programacion/fondo-mensual.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-color: transparent;
 	margin: 0 0px -21px;
 	height: 5.3rem !important;
-	width: 7.5rem !important;
+	/* width: 7.5rem !important; */
 	z-index: 101;
 }
 
@@ -242,7 +250,7 @@
 @media only screen and (min-width : 1650px) {
 	.zona-programacion-nav a {
 		width: calc(69vw/11);
-		padding: 0 2.5rem;
+		/* padding: 0 2.5rem; */
 	}
 
 	.nav-avanzada p,
@@ -258,6 +266,12 @@
 
 @media only screen and (min-width : 1650px) {
 	.zona-programacion-nav a {
-		width: calc(59.5vw/11);
+		width: calc(62.5vw/11);
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+	.zona-programacion-nav a {
+		width: calc(58.5vw/11); 
 	}
 }
